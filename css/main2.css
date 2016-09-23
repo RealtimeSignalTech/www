@@ -1,0 +1,456 @@
+/*Navbar*/
+
+.navbar{
+	min-height:30px !important;
+}
+
+.navbar-fixed-top{
+	top: 40px;
+}
+
+
+
+/*left Dropdown*/
+.dropdown-menu{
+	list-style: none;
+	background-color: #3778b0;
+	margin-right: 30px;
+	display: block;
+	margin-top: 10px;
+}
+
+/*Hides sub-menus*/
+#course-list-menu li ul{
+	position: absolute;
+	display: none;
+}
+
+/*Right dropdown*/
+#course-list-menu li:hover ul{
+	display: block;
+	z-index: 100;
+	left: 275px;
+	background-color: #fff;
+	list-style: none;
+	width: 300px;
+	z-index: -100;
+	top: 0%;
+}
+
+
+/*Footer with Querypopup*/
+
+.footerquerybar {
+    background-color: #161616;
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    z-index: 50;
+}
+
+.footerbar-transition {
+    bottom: 0;
+    transition: all 0.8s ease;
+}
+
+div {
+    display: block;
+}
+
+.footerquerybar .container {
+    position: relative;
+}
+
+@media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container {
+    width: 750px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.dropTrigger, .droptrig-xs {
+    background-color: #3778b0;
+    color: #fff;
+    font-size: 15px;
+    width: 175px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    border-radius: 1px;
+    overflow: hidden;
+    letter-spacing: -0.050em;
+    margin-right: 10px;
+}
+
+.pull-right {
+    float: right!important;
+}
+
+.dropTrigger i {
+    background-color: #306a9b;
+    float: left;
+    display: inline-block;
+    line-height: 44px;
+    padding: 0 14px;
+    font-size: 18px;
+}
+
+.fa {
+    /* display: inline-block; */
+    font: normal normal normal 14px/1 FontAwesome;
+    /* font-size: inherit; */
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+}
+
+.droptrig-xs {
+    background-color: #3778b0;
+    color: #fff;
+    font-size: 15px;
+    width: 175px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    /*display: block;*/
+    border-radius: 1px;
+    overflow: hidden;
+    /* float: right; */
+    letter-spacing: -0.050em;
+    margin-right: 10px;
+}
+
+.modal{
+	z-index: 10000;
+}
+
+.modal-fix-btm.in {
+    position: absolute;
+    padding-bottom: 5px;
+    right: 80px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    overflow: auto;
+    width: 295px;
+    height: 380px;
+}
+
+.closeQuery {
+    background-color: #306a9b;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    padding: 10px;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 36px;
+    position: absolute;
+}
+
+
+/*Topmost Offer Section*/
+
+.festBar {
+    background: #3d5f6d;
+    position: absolute;
+    width: 100%;
+		top: 0;
+		height: 40px;
+}
+
+.closeFestBar {
+    background-color: #124658;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    height: 37px;
+    margin-top: 0px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0;
+    width: auto;
+    z-index: 4;
+}
+
+.closeFestBar > i.fa {
+    padding: 7px 10px 0 10px;
+    color: #71909b;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.festBar .deep.left {
+    left: 0;
+}
+.festBar .deep {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.festBar .container {
+    color: #fff;
+    font-size: 13px;
+    line-height: 36px;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+img {
+    vertical-align: middle;
+		border: 0;
+}
+
+.textban {
+    display: inline;
+    position: relative;
+    top: 0px;
+    left: 4px;
+}
+
+.allcoroff {
+    font-size: 13px;
+    font-weight: 600;
+}
+.course-txtgrey{
+	color: #fff;
+	font-size: 15px;
+}
+
+/*home-course search*/
+
+body .home-course-search {
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px;
+}
+
+.home-course-search h1 {
+    font-size: 33px;
+    color: black;
+    text-shadow: 1px 1px 1px solid #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+body .home-course-search .search-for-course {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 20px 50px 10px;
+    width: 70%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.home-course-search .search-for-course table tr td input {
+    width: 100%;
+    height: 53px;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+		transform: translate(0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body .home-course-search .search-for-course table tr td {
+    color: #ffffff;
+    position: relative;
+}
+
+body .ed-primary-btn {
+    background-color: #3778b0;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+		padding: 10px;
+}
+
+.typeahead-button {
+    z-index: 1;
+}
+
+body .home-course-search .search-for-course table tr td i.fa-search {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    right: 19px;
+    top: 16px;
+}
+
+.homesearch > .typeahead-field > .typeahead-button > i.fa-search {
+    top: -47px !important;
+    -webkit-margin-before: 11px;
+}
+
+.search_ico {
+    margin-left: -28px;
+    z-index: 971;
+    color: #fff;
+}
+
+body .home-course-search .search-for-course table tr td a.ed-primary-btn {
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.popular-course, .popular-course a {
+    color: #777 !important;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+body .home-course-search .search-for-course p {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+body .home-course-search .search-for-course ul {
+    width: 100%;
+    margin: 0;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+body .home-course-search .search-for-course ul li {
+    width: 24.5%;
+    padding: 0;
+    text-align: center;
+}
+
+body .home-course-search .search-for-course ul li h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+body .home-course-search .search-for-course ul li p {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0px 0px 1px #000;
+}
+
+
+/*Trending Courses*/
+
+.border-side {
+    border-bottom: 1px solid #ddd;
+    font-size: 28px;
+    margin: 0 auto 15px;
+    width: 70%;
+}
+
+.border-side > span {
+    background-color: #fff;
+    position: relative;
+    top: 11px;
+    padding: 0 23px;
+}
+
+
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.courses-slider a {
+    color: inherit;
+}
+
+.course-list {
+    background-color: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    float: left;
+    height: 270px;
+    max-width: 215px;
+    min-width: 215px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+    vertical-align: top;
+}
+
+.course-list h4 {
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 14px 26px 5px;
+    padding-bottom: 14px;
+    min-height: 46px;
+}
+
+h4{
+	display: block;
+}
+
+.course-list p {
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0 0 10px;
+}

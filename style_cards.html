@@ -1,0 +1,536 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+                
+                /*Topmost Offer Section*/
+
+                  .festBar {
+                      background: #3d5f6d;
+                      position: absolute;
+                      width: 100%;
+                      top: 0;
+                      height: 40px;
+                  }
+
+                  .closeFestBar {
+                      background-color: #124658;
+                      border-radius: 0px;
+                      color: #fff;
+                      cursor: pointer;
+                      font-weight: 600;
+                      height: 37px;
+                      margin-top: 0px;
+                      position: absolute;
+                      right: 0px;
+                      text-align: center;
+                      top: 0;
+                      width: auto;
+                      z-index: 4;
+                  }
+
+                  .closeFestBar > i.fa {
+                      padding: 7px 10px 0 10px;
+                      color: #71909b;
+                      font-weight: 400;
+                      font-size: 19px;
+                  }
+
+                  .festBar .deep.left {
+                      left: 0;
+                  }
+                  .festBar .deep {
+                      position: absolute;
+                      top: 0;
+                      z-index: 1;
+                  }
+
+                  .container {
+                      padding-right: 15px;
+                      padding-left: 15px;
+                      margin-right: auto;
+                      margin-left: auto;
+                  }
+
+                  .festBar .container {
+                      color: #fff;
+                      font-size: 13px;
+                      line-height: 36px;
+                      z-index: 2;
+                      position: relative;
+                  }
+
+                  img {
+                      vertical-align: middle;
+                    border: 0;
+                  }
+
+                  .textban {
+                      display: inline;
+                      position: relative;
+                      top: 0px;
+                      left: 4px;
+                  }
+
+                  .allcoroff {
+                      font-size: 13px;
+                      font-weight: 600;
+                  }
+                  .course-txtgrey{
+                    color: #fff;
+                    font-size: 15px;
+                  }
+
+                  /*home-course search*/
+
+                  body .home-course-search {
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      padding: 40px 0 40px;
+                  }
+
+                  .home-course-search h1 {
+                      font-size: 33px;
+                      color: black;
+                      text-shadow: 1px 1px 1px solid #000;
+                      font-weight: 400;
+                      margin-bottom: 30px;
+                  }
+
+                  body .home-course-search .search-for-course {
+                      background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+                      border-radius: 3px;
+                      margin: 0 auto;
+                      padding: 20px 50px 10px;
+                      width: 70%;
+                  }
+
+                  .text-center {
+                      text-align: center;
+                  }
+
+                  .home-course-search .search-for-course table tr td input {
+                      width: 100%;
+                      height: 53px;
+                      box-shadow: none;
+                      border: none;
+                      border-radius: 3px;
+                      padding-left: 10px;
+                      background: rgba(0, 0, 0, 0.6);
+                      color: #ffffff;
+                      font-size: 16px;
+                      font-weight: 300;
+                  }
+
+                  .fa {
+                      display: inline-block;
+                      font: normal normal normal 14px/1 FontAwesome;
+                      font-size: inherit;
+                      text-rendering: auto;
+                      transform: translate(0, 0);
+                      -webkit-font-smoothing: antialiased;
+                      -moz-osx-font-smoothing: grayscale;
+                  }
+
+                  body .home-course-search .search-for-course table tr td {
+                      color: #ffffff;
+                      position: relative;
+                  }
+
+                  body .ed-primary-btn {
+                      background-color: #3778b0;
+                      display: inline-block;
+                      border-radius: 3px;
+                      font-weight: 600;
+                      font-size: 14px;
+                      color: #ffffff;
+                      padding: 10px;
+                  }
+
+                  
+
+                  body .home-course-search .search-for-course table tr td i.fa-search {
+                      color: #ffffff;
+                      font-size: 20px;
+                      position: absolute;
+                      right: 19px;
+                      top: 16px;
+                  }
+
+                  .homesearch > .typeahead-field > .typeahead-button > i.fa-search {
+                      top: -47px !important;
+                      -webkit-margin-before: 11px;
+                  }
+
+                  .search_ico {
+                      margin-left: -28px;
+                      z-index: 971;
+                      color: #fff;
+                  }
+
+                  body .home-course-search .search-for-course table tr td a.ed-primary-btn {
+                      width: 100%;
+                      height: 54px;
+                      text-align: center;
+                      padding-top: 17px;
+                  }
+
+                  .popular-course, .popular-course a {
+                      color: #777 !important;
+                      font-size: 13px;
+                      padding-bottom: 5px;
+                  }
+
+                  body .home-course-search .search-for-course p {
+                      color: #ffffff;
+                      text-shadow: 1px 1px 1px #000;
+                  }
+
+                  body .home-course-search .search-for-course ul {
+                      width: 100%;
+                      margin: 0;
+                  }
+
+                  .list-inline {
+                      padding-left: 0;
+                      list-style: none;
+                      margin-left: -5px;
+                  }
+
+                  body .home-course-search .search-for-course ul li {
+                      width: 24.5%;
+                      padding: 0;
+                      text-align: center;
+                  }
+
+                  body .home-course-search .search-for-course ul li h4 {
+                      font-size: 18px;
+                      font-weight: 700;
+                      color: #ffffff;
+                      margin-bottom: 2px;
+                      text-shadow: 1px 1px 1px #000;
+                  }
+
+                  body .home-course-search .search-for-course ul li p {
+                      font-size: 14px;
+                      color: #ffffff;
+                      font-weight: 400;
+                      text-shadow: 0px 0px 1px #000;
+                  }
+
+
+                  /*Trending Courses*/
+
+                  .border-side {
+                      border-bottom: 1px solid #ddd;
+                      font-size: 28px;
+                      margin: 0 auto 15px;
+                      width: 70%;
+                  }
+
+                  .border-side > span {
+                      background-color: #fff;
+                      position: relative;
+                      top: 11px;
+                      padding: 0 23px;
+                  }
+
+
+
+                  .list-inline {
+                      padding-left: 0;
+                      list-style: none;
+                      margin-left: -5px;
+                  }
+
+                  ul{
+                      margin-top: 0;
+                      margin-bottom: 10px;
+                  }
+
+                 .course-list {
+                      background-color: #f9f9f9;
+                      border: 1px solid #f1f1f1;
+                      float: left;
+                      height: 270px;
+                      max-width: 215px;
+                      min-width: 215px;
+                      padding-left: 0 !important;
+                      padding-right: 0 !important;
+                      text-align: center;
+                      vertical-align: top;
+                  }
+
+                  .course-list h4 {
+                      border-bottom: 1px solid #d7d7d7;
+                      font-size: 14px;
+                      font-weight: 400;
+                      margin: 14px 26px 5px;
+                      padding-bottom: 14px;
+                      min-height: 46px;
+                  }
+
+                  h4{
+                    display: block;
+                  }
+
+                  .course-list p {
+                      color: #989898;
+                      font-size: 12px;
+                      font-weight: 400;
+                      margin-bottom: 0 0 10px;
+                  }
+
+                  /*style_cards*/
+                  .cards-list li{
+                      display: inline-block;
+                      margin: 1em;
+                      list-style: none;
+                    }
+
+                    .card-overlay{
+                      margin-bottom:0; 
+                      display:none;
+                    }
+
+                    .card:hover .card-overlay{
+                      display: inline-block;
+                      position: absolute;
+                      top: 175px;
+                      opacity: 1;
+                      background: black;
+                      color: #fff;
+                      width: 19%;
+                      height: 30%;
+                      padding: 6px;
+                    }
+
+        </style>
+        <script>
+			$(document).ready(function(){
+    		$('[data-toggle="popover"]').popover();
+			});
+
+			$('.dropdown-toggle').dropdown();
+
+      $(document).ready(function() {
+
+      $("#owl-example").owlCarousel();
+
+      });
+
+		</script>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+
+
+    <body>
+
+    <div class="festBar">
+      <span class="closeFestBar">
+        <i class="fa fa-times"></i>
+      </span>
+      <div class="deep left"><img src="./img/new-left.png"><img src="./img/Saturday-Flash-Sale.png"><img src="./img/15.png">
+          <span class="course-txtgrey hidden-xs">Hurry! Offer Ends In</span>
+      </div>
+
+    </div>
+
+
+    <section class="home-course-search" style="background-image: none; min-height: 390px; position: relative">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">Instructor-led live online courses with<br>24x7 on demand support</h1>
+                <div class="search-for-course">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <form id="cb_searchbox1">
+                          <input maxlength="255" placeholder="Search for a Course" id="search-inp1" type="text">
+                          <span class="typeahead-button"> <i id="search-button-bottom" class="fa fa-search search_ico btn-link" onclick="forSubmit()"></i></span>
+                        </form>
+                      </td>
+                      <td class="text-center search-items">&nbsp;OR&nbsp;</td>
+                      <td class="search-items">
+                        <a class="ed-primary-btn" href="#">Browse Courses</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="popular-course">
+			               Jump to :
+                       <a href="/big-data-and-hadoop">Big Data Hadoop</a>,
+                       <a href="/devops">DevOps</a>,
+                       <a href="/cloudcomputing">AWS</a>,
+                       <a href="/tableau-training-for-data-visualization">Tableau</a>,
+                       <a href="/data-science">Data Science</a>,
+                       <a href="/python">Python</a>,
+                       <a href="/salesforce-foundation-combo">Salesforce</a>,
+                       <a href="/splunk">Splunk</a>,
+                       <a href="/angular-js">AngularJS</a>,
+                       <a href="/informatica">Informatica</a>
+                    </p>
+                    <ul id="search-list" class="list-inline">
+                        <li>
+                            <h4> 111,111</h4>
+                            <p>Satisfied Learners</p>
+                        </li>
+                        <li>
+                            <h4>50,000+ Hrs</h4>
+                            <p>Classes Delivered</p>
+                        </li>
+                        <li>
+                            <h4>1000+</h4>
+                            <p>Assignments</p>
+                        </li>
+                        <li>
+                            <h4>100+</h4>
+                            <p>Projects</p>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class style="background-color: #fff; position: relative;">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="tab-content">
+            <h1 class="text-center border-side"><span>Trending Courses</span></h1>
+            <br>
+              <div class="container">
+                <ul class="cards-list">
+                 <li> 
+                  <div class="card" style="display:inline-block;">
+                    <img class="card-img-top" src="./img/apachespark&scala1.png" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="color: grey; font-size: 15px;">PMP Certification Exam Training</h4>
+                        <br style="color:grey;">
+                      <a href="#" class="btn btn-success">Course Home</a>
+                      </div>
+                    <div class="card-overlay">
+                      <p>
+                          Online Classes: 24 Hrs<br>
+                          Assignments: 32 Hrs<br>
+                          Project: 20 Hrs<br>
+                          Lifetime Access<br>
+                      </p>
+                    </div><!--card-overlay-->
+                  </div><!-- card-->
+                  <div class="card-hover" style="display: none;">
+                    <p style="margin-bottom:0;">
+                        Online Classes: 24 Hrs<br>
+                        Assignments: 32 Hrs<br>
+                        Project: 20 Hrs<br>
+                        Lifetime Access<br>
+                    </p>
+                  </div>
+                  </li>
+
+                  <li>
+                  <div class="card" style="display:inline-block;">
+                    <img class="card-img-top" src="./img/bdh2.png" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="color: grey; font-size: 15px;">PMP Certification Exam Training</h4>
+                        <br style="color:grey;">
+                      <a href="#" class="btn btn-success">Course Home</a>
+                    </div>
+                    <div class="card-overlay">
+                      <p>
+                          Online Classes: 24 Hrs<br>
+                          Assignments: 32 Hrs<br>
+                          Project: 20 Hrs<br>
+                          Lifetime Access<br>
+                      </p>
+                    </div><!--card-overlay-->
+                  </div>
+                  </li>
+                  <li>
+                  <div class="card">
+                    <img class="card-img-top" src="./img/PMP.png" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="color: grey; font-size: 15px;">PMP Certification Exam Training</h4>
+                        <br style="color:grey;">
+                      <a href="#" class="btn btn-success">Course Home</a>
+                      </div>
+                      <div class="card-overlay">
+                      <p>
+                          Online Classes: 24 Hrs<br>
+                          Assignments: 32 Hrs<br>
+                          Project: 20 Hrs<br>
+                          Lifetime Access<br>
+                      </p>
+                    </div><!--card-overlay-->
+                  </div>
+                  </li>
+                          <li>
+                  <div class="card">
+                    <img class="card-img-top" src="./img/Cloud-Computing-with-AWS.png" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="color: grey; font-size: 15px;">PMP Certification Exam Training</h4>
+                        <br style="color:grey;">
+                      <a href="#" class="btn btn-success">Course Home</a>
+                      </div>
+                      <div class="card-overlay">
+                      <p>
+                          Online Classes: 24 Hrs<br>
+                          Assignments: 32 Hrs<br>
+                          Project: 20 Hrs<br>
+                          Lifetime Access<br>
+                      </p>
+                    </div><!--card-overlay-->
+                  </div>
+                  </li>
+                  </ul>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+    </body>
+</html>
