@@ -1,448 +1,92 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-                background-color:#f3f3f3;
-            }
-
-            .no-padding-left{
-              padding-left: 0;
-            }
-
-            .no-margin{
-              margin: 0;
-            }
-
-            .text-center{
-              text-align: center;
-            }
-
-            .pull-left{
-              float: left!important;
-            }
-
-            .pull-right{
-              float: right!important;
-            }
-
-            .new-breadcrum > .leftbreadsec > span {
-              color: #222222;
-              font-size: 14px;
-              font-weight: 500;
-            }
-
-            .new-breadcrum{
-              padding-bottom: 5px;
-              line-height: 29px;
-              padding: 10px 0;
-            }
-
-            .new-breadcrum > .leftbreadsec > span > a.breadactive {
-              font-weight: 600;
-            }
-
-            .new-breadcrum > .leftbreadsec > span > a {
-              color: #222222;
-              font-size: 14px;
-              font-weight: 500;
-              text-decoration: none;
-              outline: 0;
-            }
-
-            .CustomScrollBox{
-              position: relative;
-              overflow: hidden;
-              height: 100%;
-              max-width: 100%;
-              outline: none;
-              direction: ltr;
-             }
-
-             .filters_new {
-                background: #ffffff none repeat scroll 0 0;
-                border: 1px solid #e8e8e8
-              }
-
-              .course-menu-head-new{
-                font-size: 16px;
-                font-weight: 600;
-                padding: 14px 22px;
-                border-bottom: 1px solid #dddddd;
-                color: #474747;
-                margin: 0;
-              }
-
-              .filters_new > ul {
-                margin-bottom: 0;
-              }
-              .list-unstyled {
-                padding-left: 0;
-                list-style: none;
-              }
-
-              .filt_wrapper_new > a.active {
-                color: #1a1a1a;
-                
-              }
-
-              .filt_wrapper_new > a {
-                border-bottom: 1px solid #ddd;
-                color: #7e7e7e;
-                display: inline-block;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 11px 22px !important;
-                width: 100%;
-                text-transform: uppercase;
-                position: relative;
-              }
-
-              .filt_wrapper_new > a:after {
-                font-family: FontAwesome;
-                display: inline-block;
-                text-align: right;
-                content: "\f105";
-                vertical-align: top;
-                position: absolute;
-                right: 15px;
-                font-size: 17px;
-                margin-top: -2px;
-              }
-
-              .categoriestext {
-                border-bottom: 0 none;
-                color: #7e7e7e;
-                display: inline-block;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 10px 22px;
-                padding-bottom: 8px;
-                width: 100%;
-                text-transform: uppercase;
-            }
-
-            .clear_new {
-                font-size: 12px;
-                text-transform: none;
-                width: 26%;
-                text-align: right;
-            }
-
-            .clear_new > a.all_new {
-                position: relative;
-                top: 0px;
-                left: 7px;
-            }
-
-            .all-coursenewcheck input[type="checkbox"] {
-                display: none;
-            }
-
-           .checkbox{
-                position: relative;
-                display: block;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                } 
-
-            input[type=checkbox]{
-                margin: 4px 0 0;
-                line-height: normal;
-            }
-
-            input {
-                color: inherit;
-                font: inherit;
-                margin: 0;
-            }
-
-            label {
-                 cursor: pointer;
-            }
-
-            .list_wrapper_new > .list-unstyled > li > div.filt_wrapper_new > label{
-              border-bottom: 0 none !important;
-                color: #6e6e6e;                
-                font-size: 13px;
-                font-weight: normal;
-                padding: 5px 26px 10px 36px;
-                vertical-align: middle;
-                width: 100%;
-                margin-bottom: 0px;
-                display: flex;
-               }
-
-              .all-coursenewcheck input[type="checkbox"] + label:before {
-                border: 1px solid #bbbbbb;
-                content: "\00a0";
-                display: inline-block;
-                font: 16px/1em sans-serif;
-                height: 14px;
-                margin: 0.1em .7em 0 0;
-                padding-right: 14px;
-                vertical-align: bottom;
-                width: 16px;
-                border-radius: 0px;
-               }
-
-               .all-coursenewcheck input[type="checkbox"]:checked + label:before {
-                background: #1b75bb;
-                color: #fff;
-                content: "\f00c";
-                text-align: center;
-                border: 1px solid #1b75bb;
-                font-family: FontAwesome;
-                font-size: 13px;
-                margin: 0.1em .86em 0 0;
-                padding-right: 14px;
-                display: inline-block;
-                vertical-align: bottom;
-                }
-
-
-               .Refinesearch {
-                 margin-top: 15px;
-                }
-
-                .Refinepanel {
-                  border-bottom: 1px solid #d9d9d9;
-                  overflow: hidden;
-                }
-
-                .Refinepanel > h5 {
-                  margin: 0;
-                } 
-                .Refinetext {
-                    border-bottom: 0 none;
-                    color: #6e6e6e;
-                    display: inline-block;
-                    font-size: 13px;
-                    font-weight: 600;
-                    padding: 15px 22px;
-                    padding-bottom: 6px;
-                    width: 100%;
-                    text-transform: uppercase;
-                    }
-
-                    .filtelem {
-                    font-size: 12px !important;
-                    color: #7a7a7a;
-                    }
-
-                    .Refineuili {
-                    padding: 0 20px 5px 18px;
-                    margin-bottom: 10px;
-                    }
-
-                    .organi-txt{
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #418bca;
-                    margin-left: 15px;
-                    margin-bottom: 8px;
-                    }
-
-                    .small-font {
-                    font-size: 11px;
-                    font-weight: 600;
-                    margin-bottom: 8px;
-                    }
-
-                    .learn-btn {
-                    background: #418bca;
-                    border-radius: 0px;
-                    border: 1px solid #84aed9;
-                    font-size: 10px;
-                    line-height: 1.2;
-                    padding: 2px 5px;
-                    vertical-align: top;
-                    margin-bottom: 10px;
-                    }
-
-                  </style>
-        
-        <script>
-	
-
-		    </script>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main2.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-
-
-
-    <body>
-      <div class="container">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active"><a href="#">All Courses</a></li>
-        </ol>
+        <!-- custom styles -->
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+    
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active"><a href="#">All Courses</a></li>
+            </ol>
+        </div>
 
-        <article class="twocolumnpanel clearfix">
+            <!-- Courses browse grid-->
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                
+            <!-- Courses browse block-->
+                <h4 class="form-control-static">Browse Courses</h4>
+                <a href="#" class="form-control-static">ALL COURSES<span>></span></a><br>
+                <a href="#" class="form-control-static">POPULAR COURSES<span>></span></a><br>
+                <p>CATEGORIES <a href="#">View all</a></p>
+                    <ul>
+                        <li><input class="form-check-input" type="checkbox"> Big Data and Analytics</li>
+                        <li><input class="form-check-input" type="checkbox"> Cloud Computing</li>
+                        <li><input class="form-check-input" type="checkbox"> Business Intelligence & Visualization</li>
+                        <li><input class="form-check-input" type="checkbox"> DevOps</li>
+                    </ul>
+            
+        
 
-        <div class="col-md-3 col-sm-12" style="overflow:visible;">
-          <div class="CustomScrollBox">
-            <div class="CSB_container" style="position: relative; top:0; left:0;">
-              <div class="filters_new" id="mixfilters">
-                <h4 class="course-menu-head-new">Browse courses</h4>
-                <ul class="list-unstyled">
-                  <li>
-                    <div class="filt_wrapper_new category-filter">
-                      <a href="#" class="active">All courses</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="filt_wrapper_new category-filter">
-                      <a href="#" class>Popular courses</a>
-                    </div>
-                  </li>
-                  <li style="overflow: hidden;">
-                    <div class="text-center categoriestext">
-                      <span class="pull-left">categories</span>
-                      <span class="pull-left clear_new">
-                        <a href="#" id="divListBox" style="display: none;">Clear all</a>
-                      </span>
-                      <span class="pull-right clear_new">
-                        <a id="view-all-button" href="#" class="show-hidden-course font-size12 all_new">View all</a>
-                    </span>
-                    </div>
-                    <div class="list_wrapper_new">
-                      <ul class="list-unstyled">
-                        <li>
-                          <div class="filt_wrapper_new all-coursenewcheck">
-                            <input  type="checkbox" id="cat-1" value="Big Data and Analytics">
-                            <label for="cat-1">Big Data and Analytics</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="filt_wrapper_new all-coursenewcheck">
-                            <input  type="checkbox" id="cat-2" value="Big Data and Analytics">
-                            <label for="cat-2">Cloud Computing</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="filt_wrapper_new all-coursenewcheck">
-                            <input  type="checkbox" id="cat-3" value="Big Data and Analytics">
-                            <label for="cat-3">Business Intelligence & Visualization</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="filt_wrapper_new all-coursenewcheck">
-                            <input  type="checkbox" id="cat-4" value="Big Data and Analytics">
-                            <label for="cat-4">DevOps</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div><!-- Mixfilters ends-->
-              <div class="filters_new Refinesearch" id="mixfilters">
-                <h4 class="no-margin course-menu-head-new">Refine your search</h4>
-                <div class="Refinepanel">
-                  <h5 class="Refinetext">Training Type</h5>
-                  <ul class="list-unstyled Refineuili">
-                    <li>
-                      <div class="checkbox no-padding">
-                        <div class="all-coursenewcheck">
-                            <input class="filter pull sub_category_select" value="instructor-led" type="checkbox" id="check3">
-                            <label class="filtelem" for="check3">Live Instructor-Led</label>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="checkbox no-margin no-padding">
-                        <div class="all-coursenewcheck">
-                            <input class="filter pull sub_category_select" value="self-paced" type="checkbox" id="check2">
-                            <label class="filtelem" for="check2">Self-paced</label>
-                        </div>
-                    </div></li>
-                  </ul>
-                </div>
-                <div class="Renfinepanel">
-                  <h5 class="Refinetext">Batch Type</h5>
-                  <ul class="list-unstyled Refineuili">
-                    <li>
-                      <div class="checkbox no-padding">
-                        <div class="all-coursenewcheck">
-                          <input class="pull filter" value="weekend" type="checkbox" id="check4">
-                          <label class="filtelem" for="check4">Weekend</label>
-                        </div>
-                    </div>
-                    </li>
-                    <li>
-                      <div class="checkbox no-margin no-padding">
-                        <div class="all-coursenewcheck">
-                          <input class="pull filter" value="weekdays" type="checkbox" id="check5">
-                          <label class="filtelem" for="check5">Weekdays</label>
-                        </div>
-                    </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filters_new Refinesearch clearfix">
-                  <h5 class="organi-txt">Igloo for Organizations</h5>
-                  <div class="col-sm-8">
+        
+            <div><!--Refine your search block-->
+                <h4>Refine your search</h4>
+                <p>TRAINING TYPE</p>
+                    <ul>
+                        <li><input class="form-check-input" type="checkbox"> Live Instructor-Led </li>
+                        <li><input class="form-check-input" type="checkbox"> Self-paced</li>
+                    </ul>
+                <p>BATCH TYPE</p>
+                    <ul>
+                        <li><input class="form-check-input" type="checkbox"> Weekend </li>
+                        <li><input class="form-check-input" type="checkbox"> Weekdays</li>
+                    </ul>
+            </div>
+
+            <!--partner with org-->
+            <div class="col-md-12">
+                <h5>Igloo for Organizations</h5>
+                <div class="col-md-8">
                     <p class="small-font">Your organization's partner for all professional trainings</p>
                     <a href="#" class="btn btn-primary btn-xs learn-btn">Learn More</a>
                   </div>
-                  <div class="col-sm-4 text-center no-padding-left">
+                <div class="col-md-4">
                     <img src="./img/handshake.png" style="opacity: 0.5; vertical-align: middle;">
-                  </div>
                 </div>
-              </div>
-             </div> 
+            </div><!-- end of partner with org-->
+
             </div>
-          </div>
-        <div class="col-md-9 col-sm-12 no-padding">
-          <div class="col-md-12 col-sm-12">
-            <div class="course-boxlist-section bord-light margin-btm15">
-              <h4 class="search_heading no-margin no-padding-right less-pad-lft no-border">
-                <span>All Courses</span>
-              </h4>
-            </div>
-          </div>
         </div>
+    </div>    
+    
+        
 
-        </article>
-      </div>
-    </body>
 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
+        <!-- scripts -->    
+        <script src="js/jquery.min.js"></script>
+        <!-- for bootstrap tooltips to be used, tether is included -->
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        
     </body>
 </html>
