@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <!-- custom styles -->
+        <style>
+            .unstyled-list{
+                list-style: none;
+                padding: 0;
+            }
+
+            .float-left{
+                float: left;
+               
+              }
+
+            .footer-modified{
+                background: rgb(84,6,6);
+                margin-top: 20px;
+                width: 100%;
+                color: #fff;
+            }
+
+            .footer-modified a{
+                color: #fff;
+            }
+
+            .footer-social-icon{
+                height: 18px;
+                width: 18px;
+                display: inline-block;
+                text-align: center;
+                float: left;
+                margin-right: 1px;
+            }
+           
+            .border-top{
+                border-top: 1px solid #fff;
+                margin-top: 20px;
+                padding: 25px;
+                padding-right: 0;
+            }
+
+            .foot-up{
+                padding-top: 20px;
+            }
+
+            #map{
+                height: 400px;
+                width: 1340px;
+                border: 1px solid black;
+            }
+
+            ul{
+                margin: 10px 20px 10px 10px;
+                padding: 10px; 
+            }
+
+            img{
+                display: block;
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div id="map"></div>
+        <script>
+            var map;
+            function initMap(){
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {
+                        lat: 12.916482, lng: 77.610610},
+                        zoom: 15                    
+                });
+                var marker = new google.maps.Marker({
+                    position: {lat: 12.916482, lng: 77.610610},
+                    title:"Igloo!",
+                    visible: true
+                });
+                marker.setMap(map);
+                map.setOptions({ scrollwheel: false });
+            }
+        
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Rnp9SFRTc-T3mZrbqup3FRc0smH0cKY&v=3&callback=initMap"></script>
+
+
+    <!-- footer Section -->
+    <div class="container-fluid footer-modified">
+        <div class="container">
+        <footer>
+            <div class="foot-up">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                
+                <h3>Igloo</h3>
+                <ul class="unstyled-list float-left">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News & Media</li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                
+                <ul class="unstyled-list float-left">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Terms & conditions </a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+                
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <h4>
+                    Work with us
+                </h4>
+                <ul class="unstyled-list">
+                    <li>Become an Instructor</li>
+                    <li>Hire from Edureka</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <h4>
+                    Follow us on
+                </h4>
+                <ul class="unstyled-list footer-social-icon">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href= "#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+               <h6>
+                   Learn on the GO!
+               </h6> 
+               <ul class="unstyled-list" style="margin-top: 18px;">
+                   <li style="margin-top: 15px;"><a href="#"><img class="img-fluid m-x-auto d-block" src="./img/applestorebtn.png"></a></li>
+                   <li style="margin-top: 15px;"><a href="#"><img class="img-fluid m-x-auto d-block" src="./img/googleplaybtn.png"></a></li>
+               </ul>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border-top">
+                <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12">
+                    <h3><a href="#">Igloo</a></h3>
+                    <p>© 2016 Real Time Education Solutions Pvt. Ltd. All rights Reserved.</p>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12" style="font-size: 12px;">
+                    <p>"PMP®","PMI®", "PMI-ACP®" and "PMBOK®" are registered marks of the Project Management Institute, Inc.
+                    <br>
+                    MongoDB®, Mongo and the leaf logo are the registered trademarks of MongoDB, Inc. </p>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>    
+    
+        
+
+
+
+
+
+        <!-- scripts -->    
+        <script src="js/jquery.min.js"></script>
+        <!-- for bootstrap tooltips to be used, tether is included -->
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    </body>
+</html>
