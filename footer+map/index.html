@@ -67,8 +67,7 @@
             }
 
             img{
-                display: block;
-                
+                display: block;                
             }
         </style>
     </head>
@@ -93,6 +92,11 @@
                 map.setOptions({ scrollwheel: false });
             }
         
+            function scrolltop()
+            {
+                
+                $("body,html").animate({scrollTop:0}, 4000);
+            }
 
 
         </script>
@@ -172,6 +176,10 @@
                     <br>
                     MongoDB®, Mongo and the leaf logo are the registered trademarks of MongoDB, Inc. </p>
                 </div>
+            </div>
+            <div class="container-fluid">
+                <img id="top-arrow" class="pull-xs-right img-fluid m-b-2" src="./img/top-arrow.png"
+                style="cursor: pointer;" onclick="scrolltop()">
             </div>
         </footer>
         </div>
