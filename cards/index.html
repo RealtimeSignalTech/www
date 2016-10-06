@@ -13,11 +13,13 @@
         
         <!-- custom styles -->
         <style>
-            .card{
+
+            body{
+              margin-top: 50px;
+            }
+            .card-deck{
                 display: inline-block;
-                width: 13.5rem;
-                padding: 0;
-                margin-right: 15px;
+                width: 14rem;
             }
 
             .card-overlay{
@@ -26,15 +28,20 @@
             .card:hover .card-overlay{
                       display: inline-block;  
                       position: absolute;
-                      top: 90px;
+                      top: 110px;
                       opacity: 0.5;
                       background: rgba(117, 114, 115, 0.51);
                       color: #fff;
                       width: 100%;
-                      height: 63%;                
+                      height: 78%;   
+                      margin: -20px;             
                     }
-            .card:hover .hide{
+            .card:hover .hidden{
                 visibility: hidden;
+            }
+
+            a{
+              color: #8b9194;
             }
         </style>
     </head>
@@ -42,77 +49,75 @@
     <body>
     
     <div class="container">
-        <div class="row">
-            <h1 style="text-align: center;">Trending Courses</h1>
-        </div>
-        
-                    <div class="card col-sm-12" style="">
-                    <div>
-                      <a href="#">
-                        <img src="./img/apachespark&scala1.png">
-                        <h4 class="card-title hide">Apache Spark Certification Training</h4>
-                        <hr class="hide">
-                        <!-- Rating goes here -->
-                        <!-- Next session date goes here -->
-                        <p class="hide">₹16,995</p>
-                        <div class="card-overlay">
-                          <p>
+      <div class="card-deck-wrapper">
+  <div class="card-deck">
+    <div class="card">
+      <a href="#">
+      <img class="card-img-top" src="./img/apachespark&scala1.png" alt="Card image cap">
+      <div class="card-block">
+        <h6 class="card-title hidden">Apache Spark Certification Training</h6>
+        <hr class="hidden">
+              <!-- Rating goes here -->
+              <!-- Next session date goes here -->
+        <p class="card-text hidden">₹16,995</p>
+        <p class="card-text"><small class="text-muted hidden">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</small></p>
+        <div class="card-overlay">
+                          <p class="m-l-2">
                               Online Classes: 24 Hrs<br>
                               Assignments: 32 Hrs<br>
                               Project: 20 Hrs<br>
                               Lifetime Access<br>
                           </p>
-                        </div><!--card-overlay--></a>
-                    </div>
-                    </div>
-                    
-                    <div class="card col-sm-12">
-                      <a href="#">
-                        <img class="card-img-top" src="./img/bdh2.png">
-                        <h4 class="card-title hide">Big Data Hadoop Certification Training</h4>
-                        <hr class="hide">
+        </div><!--card-overlay-->
+        </a>
+      </div>
+    </div>
+    <div class="card">
+     <a href="#">
+      <img class="card-img-top" src="./img/Cloud-Computing-with-AWS.png" alt="Card image cap">
+      <div class="card-block">
+       
+        <h6 class="card-title hidden">AWS Architect Certification Training</h6>
+        <hr class="hidden">
                         <!-- Rating goes here -->
-                        <!-- Next session date goes here -->
-                        <p class="hide">₹18,695</p>
-                        <div class="card-overlay">
-                          <p>
+                        <!-- Next session date goes here -->        
+        <p class="card-text hidden">₹18,695</p>
+        <p class="card-text"><small class="text-muted hidden">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</small></p>
+        <div class="card-overlay">
+                          <p class="m-l-2">
                               Online Classes: 24 Hrs<br>
                               Assignments: 32 Hrs<br>
                               Project: 20 Hrs<br>
                               Lifetime Access<br>
                           </p>
-                        </div><!--card-overlay--></a>
-                    </div>
-
-                    <div class="card col-sm-12">
-                      <a href="#">
-                        <img class="card-img-top" src="./img/Cloud-Computing-with-AWS.png">
-                        <h4 class="card-title hide">AWS Architect Certification Training</h4>
-                        <hr class="hide">
+        </div><!--card-overlay-->
+        </a>
+      </div>
+    </div>
+    <div class="card">
+    <a href="#">
+      <img class="card-img-top" src="./img/devops.png" alt="Card image cap">
+      <div class="card-block">
+        <h6 class="card-title hidden">Big Data Hadoop Certification Training</h6>
+        <hr class="hidden">
                         <!-- Rating goes here -->
-                        <!-- Next session date goes here -->
-                        <p class="hide">₹15,125</p>
-                        <div class="card-overlay">
-                          <p>
+                        <!-- Next session date goes here -->        
+        <p class="card-text hidden">₹18,695</p>
+        <p class="card-text"><small class="text-muted hidden">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</small></p>
+        <div class="card-overlay">
+                          <p class="m-l-2">
                               Online Classes: 24 Hrs<br>
                               Assignments: 32 Hrs<br>
                               Project: 20 Hrs<br>
                               Lifetime Access<br>
                           </p>
-                        </div><!--card-overlay--></a>
-                    </div>
-
-                    
-
-                    
-                    
-                
-    </div>    
-    
-        
-
-
-
+        </div><!--card-overlay-->
+        </a>        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
         <!-- scripts -->    
