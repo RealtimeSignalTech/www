@@ -19,6 +19,10 @@ request.open('GET', 'all-courses1.json', true);
 request.send();
 
 //countdown on offer bar
-$('#clock').countdown('2020/10/10', function(event){
+$( document ).ready(function() {
+    $('#clock').countdown('2016/10/10', function(event){
 	$(this).html(event.strftime('%D days %H:%M:%S'));
+	});
 });
+
+
