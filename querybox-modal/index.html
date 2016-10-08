@@ -75,6 +75,7 @@
                 padding: 0 8px 0 10px;
                 line-height: 40px;
                 border-radius: 2px;
+                cursor: pointer;
             }
 
             .modal-backdrop {
@@ -83,54 +84,68 @@
 
             .modal{
                 position: absolute; 
-                bottom: 0px; 
+                margin: 0 5px 10px 0; 
                 right: 0px; 
                 left: auto; 
                 top: auto; 
                 bottom: 0; 
-                overflow: auto;
+                overflow: auto;                
             }
-            
+                       
         </style>
     </head>
     
     <body>
     <div id="popupBar">
         <div class="container">
-            <div class="call-us">
-                <span id="calling"></span>
-                    Call us on
-                <span class="india-flag"></span>   
-                <span>+91 808 111 7777</span>
-            </div>
+            <div class="hidden-sm-down">
+                <div class="call-us">
+                    <span id="calling"></span>
+                        Call us on
+                    <span class="india-flag"></span>   
+                    <span>+91 808 111 7777</span>
+                </div>
+
             <div class="queryBox to-right" id="query" data-toggle="modal" data-target="#myModal">
                 <i class="fa fa-envelope"></i> Ask about Anything
             </div>
 
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title">Send us your Query</h4>
-                </div>
-                <div class="modal-body">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h4 class="modal-title">Send us your Query</h4>
+                        </div>
 
-                    <form>
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name*">
-                        <input type="email" class="form-control" placeholder="Email*">
-                        <input type="tel" class="form-control" placeholder="Mobile No*">
-                        <textarea rows="4" cols="78">Query</textarea>
-                       </div>
-                      
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-                
-              </div><!-- /.modal-content -->
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name*">
+                                    <input type="email" class="form-control" placeholder="Email*">
+                                    <input type="tel" class="form-control" placeholder="Mobile No*">
+                                    <textarea rows="4" cols="30">Query</textarea>
+                                </div>                              
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>                
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
             </div><!-- /.modal-dialog -->
-  </div>
+         </div><!-- modal -->
+
+         <div class="hidden-md-up">
+             <div class="row">
+                 <div class="col-xs-6 col-sm-6 m-r-0" style="padding: 0;">
+                     <button class="btn btn-info btn-block" data-toggle="modal" data-target="#call_us"><i class="fa fa-phone m-r-1"></i>Call us on</button>
+                     
+                 </div>
+                 <div class="col-xs-6 col-sm-6 m-l-0" style="padding: 0;">
+                     <button class="btn btn-primary btn-block"><i class="fa fa-envelope m-r-1"></i>Drop us a Query</button>
+                 </div>
+             </div>             
+         </div>
+
         </div>    
     </div>
         
