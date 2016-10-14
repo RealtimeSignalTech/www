@@ -1,6 +1,6 @@
 //countdown on offer bar
 $( document ).ready(function() {
-    $('#clock').countdown('2016/10/10', function(event){
+    $('#clock').countdown('2016/10/19', function(event){
 	$(this).html(event.strftime('%D days %H:%M:%S'));
 	});
 });
