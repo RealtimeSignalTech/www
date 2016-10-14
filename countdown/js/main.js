@@ -6,3 +6,8 @@ $( document ).ready(function() {
 });
 
 
+$(".fa").on("click", function(event){
+	$(".offerBg").remove();
+	event.preventDefault();
+});
+
