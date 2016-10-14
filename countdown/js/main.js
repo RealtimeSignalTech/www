@@ -11,6 +11,6 @@ function init_offer_time(offer_date) {
 	});
 }
 $(".close-offer-btn").on("click", function(event){
-	$(".offerBg").remove();
+	$(".offer-bg").remove();
 	event.preventDefault();
 });
