@@ -27,27 +27,29 @@
     .offerBg{
         background: #942a37 url(../img/year-end-bg.png) repeat-x;
     }
-    .closeFestBar{
-        float: right;
-        display: block;
-    }
     #clock { color: #fff; }
 </style>
 
 <div class="container-fluid offerBg">
-    <span class="closeFestBar"><i class="fa fa-times"></i></span>
-    <div class="col-xs-12 col-md-10 offset-md-1">            
-        <div>
-            <img class="m-l-2" src="../img/Saturday-Flash-Sale.png">
-            <img class="m-l-1" src="../img/15.png">
-            <span class="m-l-1" style="color: #fff;" >Hurry! Offer Ends In</span>
-            <span class="m-l-2" id="clock"></span>
+    <div class="row">
+        <div class="col-xs-12 text-xs-center col-md-6 text-md-right">
+            <img src="../img/Saturday-Flash-Sale.png">
+            <img src="../img/15.png">
+        </div>
+        <div class="col-xs-12 text-xs-center col-md-5 text-md-left">
+            <span style="color: #fff;" >Hurry! Offer Ends In</span>
+            <span id="clock"></span>
+        </div>
+        <div class="closeFestBar col-xs-12 col-md-1 text-xs-right">
+            <i class="fa fa-times"></i>
         </div>
     </div>
 </div>
 <div class="d-block bg-primary col-xs-12">
     debug
 </div>
+
+
 
 <!-- module scripts -->
 <script src="js/main.js"></script>
