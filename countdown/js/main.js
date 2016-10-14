@@ -6,7 +6,7 @@ $( document ).ready(function() {
 });
 
 function init_offer_time(offer_date) {
-    $('#clock').countdown(offer_date, function(event){
+    $('#count-down-timer').countdown(offer_date, function(event){
         $(this).html(event.strftime('%D days %H:%M:%S'));
 	});
 }
