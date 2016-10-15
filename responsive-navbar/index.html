@@ -21,8 +21,6 @@
 </head>
 <body>
 <!----module code starts---->
-
-
 <div class="hidden-sm-down">
     <nav class="navbar navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -53,7 +51,16 @@
     <nav class="navbar navbar-dark bg-primary">
         <ul class="nav navbar-nav pull-xs-left">
             <li class="nav-item">
-                <a class="nav-link" href="#">&#9776;</a>
+                <a class="nav-link" data-toggle="dropdown" href="#">&#9776;</a>
+                <div class="dropdown-menu" style="background-color: #37a7b0; border-radius: 0; width: 200px;">
+                    <ul style="list-style: none; padding: 10px; ">
+                    <li><a href="#">Big Data and Analytics</a></li>
+                    <li><a href="#">Cloud Computing</a></li>
+                    <li><a href="#">Business Intelligence & Visualization</a></li>
+                    <li><a href="#">DevOps</a></li>
+                    <li><button class="btn btn-outline-secondary btn-sm btn-block">All courses</button></li>
+                    </ul>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"
@@ -102,20 +109,5 @@
     </div>
 </div>
 </div>
-
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
