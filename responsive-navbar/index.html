@@ -44,7 +44,12 @@
 </div>
 
 
-<div class="hidden-md-up">
+<style>
+    #search-bar-form input[type=text]{width:100% !important;}
+</style>
+
+
+<div class="hidden-md-up container-fluid">
     <nav class="navbar navbar-dark bg-primary">
         <ul class="nav navbar-nav pull-xs-left">
             <li class="nav-item">
@@ -58,8 +63,10 @@
                     aria-label="Toggle navigation">
                     <i class="fa fa-search"></i>
                 </a>
-                <div class="dropdown-menu" style="margin-top: -2px; border-top: 0px; width: 100vw;">
-                    <input class="m-x-1" type="text" placeholder="Search" style="width: 96vw;">
+                <div class="dropdown-menu">
+                    <form id="search-bar-form" class="form-inline">
+                        <input class="form-control" type="text" placeholder="Search">
+                    </form>
                 </div>
             </li>
         </ul>
