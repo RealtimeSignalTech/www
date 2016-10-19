@@ -25,7 +25,7 @@ $(document).ready(function(){
         dots:false,
         autoplay: false,
         //autoplayTimeout: 1000,
-        //autoHeight:false,
+        autoHeight:false,
         //onInitialized: setOwlStageHeight,
         //onResized: setOwlStageHeight,
         //onTranslated: setOwlStageHeight,
@@ -43,7 +43,9 @@ $(document).ready(function(){
 <h4 class="m-l-2">Latest OWL is not comapatible with latest jQuery 3.1</h4>
 <p class="m-l-2">-- fixed the issue by replacing andSelf (removed in JQ3.0) function with addBack (equivalent function in JQ3.1)</p>
 
-<div class="owl-carousel container m-t-2">
+<div class="container m-t-2">
+<div class="xcard-deck-wrapper">
+<div class="owl-carousel xcard-deck">
     <div class="card"><div class="card-header">Title: card-1 </div><div class="card-block">This card block. This text is to vary the length of the card.</div></div>
     <div class="card"><div class="card-header">Title: card-2 </div><div class="card-block">This card block</div></div>
     <div class="card"><div class="card-header">Title: card-3 </div><div class="card-block">This card block</div></div>
