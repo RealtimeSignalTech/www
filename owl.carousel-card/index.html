@@ -1,3 +1,9 @@
+<!--
+
+http://stackoverflow.com/questions/29769409/owl-carousel-2-autoheight-multiple-items
+
+-->
+
 
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/owl.carousel.css">
@@ -17,33 +23,19 @@ $(document).ready(function(){
         margin:16,
         nav:true,
         dots:false,
-<<<<<<< HEAD
-        autoHeight: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-=======
-        autoplay: true,
-        autoHeight:true,
-        onInitialized: setOwlStageHeight,
-        onResized: setOwlStageHeight,
+        autoplay: false,
+        //autoplayTimeout: 1000,
+        //autoHeight:false,
+        //onInitialized: setOwlStageHeight,
+        //onResized: setOwlStageHeight,
         //onTranslated: setOwlStageHeight,
-        responsive:{ 0:{ items:1 }, 600:{ items:3 }, 1000:{ items:6 } }
->>>>>>> fd85d1d0e904f9639336c2ad85db03b76d713fbf
+        responsive:{ 0:{ items:1 }, 600:{ items:3 }, 1000:{ items:5 } }
     });
     function setOwlStageHeight(event){var maxHeight =0;
-        $('.card').each(function(){// LOOP THROUGH ACTIVE ITEMS
+        $('.owl-carousel .card').each(function(){// LOOP THROUGH ACTIVE ITEMS
             var thisHeight = parseInt( $(this).height());
             maxHeight=(maxHeight>=thisHeight?maxHeight:thisHeight);});
-        $('.card').css('height', maxHeight );
+        $('.owl-carousel .card').css('height', maxHeight );
     };
 });
 </script>
@@ -51,21 +43,31 @@ $(document).ready(function(){
 <h4 class="m-l-2">Latest OWL is not comapatible with latest jQuery 3.1</h4>
 <p class="m-l-2">-- fixed the issue by replacing andSelf (removed in JQ3.0) function with addBack (equivalent function in JQ3.1)</p>
 
-<<<<<<< HEAD
 <div class="owl-carousel container m-t-2">
     <div class="card"><div class="card-header">Title: card-1 </div><div class="card-block">This card block. This text is to vary the length of the card.</div></div>
     <div class="card"><div class="card-header">Title: card-2 </div><div class="card-block">This card block</div></div>
-=======
-<div class="container m-t-2">
-<div class="xcard-deck-wrapper">
-<div class="owl-carousel xcard-deck">
-    <div class="card"><div class="card-header">Title: card-1 </div><div class="card-block">This card block<br>This card block</div></div>
-    <div class="card"><div class="card-header">Title: card-2 </div><div class="card-block">This card block<br>This card block</div></div>
->>>>>>> fd85d1d0e904f9639336c2ad85db03b76d713fbf
     <div class="card"><div class="card-header">Title: card-3 </div><div class="card-block">This card block</div></div>
     <div class="card"><div class="card-header">Title: card-4 </div><div class="card-block">This card block</div></div>
     <div class="card"><div class="card-header">Title: card-5 </div><div class="card-block">This card block</div></div>
     <div class="card"><div class="card-header">Title: card-6 </div><div class="card-block">This card block</div></div>
+</div>
+</div>
+</div>
+
+<style>
+.card-block { xborder:1px solid red; }
+.eg2 { height: 200px !important; }
+</style>
+
+<div class="container m-t-2">
+<div class="xcard-deck-wrapper">
+<div class="owl-carousel xcard-deck">
+    <div class="eg2 card"><div class="card-header">Title: card-1 </div><div class="card-block">This card block<br>This card block<br>This card block</div></div>
+    <div class="eg2 card"><div class="card-header">Title: card-2 </div><div class="card-block">This card block<br>This card block<br>This card block</div></div>
+    <div class="eg2 card"><div class="card-header">Title: card-3 </div><div class="card-block">This card block</div></div>
+    <div class="eg2 card"><div class="card-header">Title: card-4 </div><div class="card-block">This card block</div></div>
+    <div class="eg2 card"><div class="card-header">Title: card-5 </div><div class="card-block">This card block</div></div>
+    <div class="eg2 card"><div class="card-header">Title: card-6 </div><div class="card-block">This card block</div></div>
 </div>
 </div>
 </div>
