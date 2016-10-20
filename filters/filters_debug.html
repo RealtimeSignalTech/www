@@ -1,0 +1,321 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <!-- custom styles -->
+        <style>
+              body {
+                  padding-top: 50px;
+                  padding-bottom: 20px;
+                  background-color:#f3f3f3;
+              }
+
+              .filters_bg {
+                background: #ffffff none repeat scroll 0 0;
+                border: 1px solid #e8e8e8
+              }
+
+              .course-menu-title{
+                font-size: 16px;
+                font-weight: 600;
+                padding: 14px 22px;
+                border-bottom: 1px solid #dddddd;
+                color: #474747;
+                margin: 0;
+              }
+
+              .list-unstyled {
+                padding-left: 0;
+                list-style: none;
+              }
+
+              .courses_wrapper > a {
+                border-bottom: 1px solid #ddd;
+                color: #7e7e7e;
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 11px 22px !important;
+                width: 100%;
+                text-transform: uppercase;
+                position: relative;
+              }
+
+              .courses_wrapper > a:after {
+                font-family: FontAwesome;
+                display: inline-block;
+                text-align: right;
+                content: "\f105";
+                vertical-align: top;
+                position: absolute;
+                right: 15px;
+                font-size: 17px;
+                margin-top: -2px;
+              }
+
+              .cat_header {
+                border-bottom: 0 none;
+                color: #7e7e7e;
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 10px 22px;
+                padding-bottom: 8px;
+                width: 100%;
+                text-transform: uppercase;
+              }
+
+              .view_all {
+                font-size: 12px;
+                text-transform: none;
+                width: 26%;
+                text-align: right;
+              }            
+
+              .courses_checkbox input[type="checkbox"] {
+                display: none;
+              }
+
+              label {
+                 cursor: pointer;
+              }
+
+            .list_wrapper > .list-unstyled > li > div.courses_wrapper > label{
+              border-bottom: 0 none !important;
+              color: #6e6e6e;                
+              font-size: 13px;
+              font-weight: normal;
+              padding: 5px 26px 10px 36px;
+              vertical-align: middle;
+              width: 100%;
+              margin-bottom: 0px;
+              display: flex;
+             }
+
+            .courses_checkbox input[type="checkbox"] + label:before {
+              border: 1px solid #bbbbbb;
+              content: "\00a0";
+              display: inline-block;
+              font: 16px/1em sans-serif;
+              height: 14px;
+              margin: 0.1em .7em 0 0;
+              padding-right: 14px;
+              vertical-align: bottom;
+              width: 16px;
+              border-radius: 0px;
+             }
+
+             .courses_checkbox input[type="checkbox"]:checked + label:before {
+              background: #1b75bb;
+              color: #fff;
+              content: "\f00c";
+              text-align: center;
+              border: 1px solid #1b75bb;
+              font-family: FontAwesome;
+              font-size: 13px;
+              margin: 0.1em .86em 0 0;
+              padding-right: 14px;
+              display: inline-block;
+              vertical-align: bottom;
+              }
+
+
+             .refinesearch {
+               margin-top: 15px;
+              }           
+
+              
+              .refine_type {
+              border-bottom: 0 none;
+              color: #6e6e6e;
+              display: inline-block;
+              font-size: 13px;
+              font-weight: 600;
+              padding: 15px 22px;
+              padding-bottom: 6px;
+              width: 100%;
+              text-transform: uppercase;
+              }
+
+              .refine_text_opt {
+              font-size: 12px !important;
+              color: #7a7a7a;
+              }
+
+              .refine_list_style {
+              padding: 0 20px 5px 18px;
+              margin-bottom: 10px;
+              }
+
+              .organi-txt{
+              font-size: 14px;
+              font-weight: 600;
+              color: #418bca;
+              margin-left: 15px;
+              margin-bottom: 8px;
+              }
+
+              .small-font {
+              font-size: 11px;
+              font-weight: 600;
+              margin-bottom: 8px;
+              }
+
+              .learn-btn {
+              background: #418bca;
+              border-radius: 0px;
+              border: 1px solid #84aed9;
+              font-size: 10px;
+              line-height: 1.2;
+              padding: 2px 5px;
+              vertical-align: top;
+              margin-bottom: 10px;
+              }
+
+            </style>
+               
+    </head>
+<body>
+    
+    <div class="container">
+        
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active"><a href="#">All Courses</a></li>
+        </ol>
+
+        <article class="twocolumnpanel clearfix">
+
+        <div class="col-md-3 col-sm-12" style="overflow:visible;">
+          
+            <div style="position: relative; top:0; left:0;">
+              <div class="filters_bg">
+                <h4 class="course-menu-title">Browse courses</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="courses_wrapper">
+                      <a href="#" class="active">All courses</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="courses_wrapper">
+                      <a href="#" class>Popular courses</a>
+                    </div>
+                  </li>
+                  <li style="overflow: hidden;">
+                    <div class="text-center cat_header">
+                      <span class="pull-left">categories</span>
+                      <span class="pull-right view_all">
+                        <a href="#">View all</a>
+                    </span>
+                    </div>
+                    <div class="list_wrapper">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="courses_wrapper courses_checkbox">
+                            <input  type="checkbox" id="cat-1" value="Big Data and Analytics">
+                            <label for="cat-1">Big Data and Analytics</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="courses_wrapper courses_checkbox">
+                            <input  type="checkbox" id="cat-2" value="Big Data and Analytics">
+                            <label for="cat-2">Cloud Computing</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="courses_wrapper courses_checkbox">
+                            <input  type="checkbox" id="cat-3" value="Big Data and Analytics">
+                            <label for="cat-3">Business Intelligence & Visualization</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="courses_wrapper courses_checkbox">
+                            <input  type="checkbox" id="cat-4" value="Big Data and Analytics">
+                            <label for="cat-4">DevOps</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- -->
+              <div class="filters_bg refinesearch">
+                <h4 class="course-menu-title">Refine your search</h4>
+                
+                  <h5 class="refine_type">Training Type</h5>
+                  <ul class="list-unstyled refine_list_style">
+                    <li>
+                      <div class="no-padding">
+                        <div class="courses_checkbox">
+                            <input class="filter pull sub_category_select" value="instructor-led" type="checkbox" id="check3">
+                            <label class="refine_text_opt" for="check3">Live Instructor-Led</label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                    
+                        <div class="courses_checkbox">
+                            <input class="filter pull sub_category_select" value="self-paced" type="checkbox" id="check2">
+                            <label class="refine_text_opt" for="check2">Self-paced</label>
+                        </div>
+                    </li>
+                  </ul>
+                
+                <div>
+                  <h5 class="refine_type">Batch Type</h5>
+                  <ul class="list-unstyled refine_list_style">
+                    <li>
+                      <div class="checkbox no-padding">
+                        <div class="courses_checkbox">
+                          <input class="pull filter" value="weekend" type="checkbox" id="check4">
+                          <label class="refine_text_opt" for="check4">Weekend</label>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <div class="courses_checkbox">
+                          <input class="pull filter" value="weekdays" type="checkbox" id="check5">
+                          <label class="refine_text_opt" for="check5">Weekdays</label>
+                        </div>
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filters_bg refinesearch clearfix">
+                  <h5 class="organi-txt">Igloo for Organizations</h5>
+                  <div class="col-sm-8">
+                    <p class="small-font">Your organization's partner for all professional trainings</p>
+                    <a href="#" class="btn btn-primary btn-xs learn-btn">Learn More</a>
+                  </div>
+                  <div class="col-sm-4 text-center p-l-0">
+                    <img src="./img/handshake.png" style="opacity: 0.5; vertical-align: middle;">
+                  </div>
+                </div>
+              </div>
+             </div> 
+          
+          </div>
+        </article>
+      </div>
+
+<!-- scripts -->    
+        <script src="js/jquery.min.js"></script>
+        <!-- for bootstrap tooltips to be used, tether is included -->
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    </body>
+</html>
