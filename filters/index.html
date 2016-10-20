@@ -22,6 +22,18 @@
                 background-color: #ffffff;
                 padding:1rem;
             }
+            input[type="checkbox"] + label:before {
+                border: 1px solid #bbbbbb;
+                content: "\00a0";
+                display: inline-block;
+                font: 16px/1em sans-serif;
+                height: 14px;
+                margin: 0.1em .7em 0 0;
+                padding-right: 14px;
+                vertical-align: bottom;
+                width: 16px;
+                border-radius: 0px;
+               }
         </style>
     </head>
     
@@ -41,9 +53,9 @@
                 <div class="bg-white">    
                 <!-- Courses browse block-->
                     <h4>Browse Courses</h4>
-                    <a href="#">ALL COURSES<span>></span></a><br>
-                    <a href="#">POPULAR COURSES<span>></span></a><br>
-                    <p>CATEGORIES <a href="#">View all</a></p>
+                    <a href="#">ALL COURSES<span><i class="fa fa-chevron-right pull-right"></i></span></a><br>
+                    <a href="#">POPULAR COURSES<span><i class="fa fa-chevron-right pull-right"></i></span></a><br>
+                    <p>CATEGORIES <a href="#" class="pull-right">View all</a></p>
                         <ul>
                             <li><input class="form-check-input" type="checkbox"> Big Data and Analytics</li>
                             <li><input class="form-check-input" type="checkbox"> Cloud Computing</li>
