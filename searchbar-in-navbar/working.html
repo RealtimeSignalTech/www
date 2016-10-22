@@ -7,6 +7,30 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../css/font-awesome.min.css"></script>
+<style type="text/css">
+    .category{
+        background-color: #3778b0;
+
+    }
+    .category a{
+        color: #fff;
+        padding-left: 1rem;
+    }
+    .category-courses{
+        padding-left: 1rem;
+        border-radius: 0;
+    }
+    .dropdown-menu{
+        border: none;
+    }
+    .category a:hover {
+                background-color: #fff;
+                color: #337ab7;
+                text-decoration: none;
+                background-clip: content-box;                
+            }
+</style>
 </head>
 <body>
 
@@ -38,7 +62,7 @@
                 <button type="button" class="btn btn-secondary" data-toggle="dropdown">
                     &#9776;
                 </button>
-                <div class="dropdown-menu" style="border:0;background-color:transparent;width:600px;"> <!-- TODO: need to fix width -->
+                <div class="dropdown-menu" style="width:500px;"> <!-- TODO: need to fix width -->
                 </div>
             </div>
             <input type="text" class="form-control" placeholder="What do you want to learn today!">
@@ -52,24 +76,24 @@
 <div id="dbg" style="display:none;">
         <div class="card-group">
             <div class="card">
-                                <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1000" href="vitae-est-at">
-                        Vitae est at
+                <div class="category">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1000" href="vitae-est-at">
+                        Vitae est at<i class="fa fa-chevron-right pull-right"></i>
                     </a>
                     <div class="category1000" style="display:none;">
-                                                <a class="d-block" href="eius-harum-minus/10000022/content">
+                        <a class="d-block" href="eius-harum-minus/10000022/content">
                             Eius harum minus
                         </a>
-                                                <a class="d-block" href="ducimus-commodi/10000024/content">
+                        <a class="d-block" href="ducimus-commodi/10000024/content">
                             Ducimus commodi
                         </a>
-                                                <a class="d-block" href="quia-nobis-quidem/10000030/content">
+                        <a class="d-block" href="quia-nobis-quidem/10000030/content">
                             Quia nobis quidem
                         </a>
-                                            </div>
+                    </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1001" href="tenetur-dolor-ullam">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1001" href="tenetur-dolor-ullam">
                         Tenetur dolor ullam
                     </a>
                     <div class="category1001" style="display:none;">
@@ -88,7 +112,7 @@
                                             </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1003" href="voluptas-et-maxime">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1003" href="voluptas-et-maxime">
                         Voluptas et maxime
                     </a>
                     <div class="category1003" style="display:none;">
@@ -116,7 +140,7 @@
                                             </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1006" href="earum-rerum">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1006" href="earum-rerum">
                         Earum rerum
                     </a>
                     <div class="category1006" style="display:none;">
@@ -129,7 +153,7 @@
                                             </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1007" href="omnis-possimus-maxime">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1007" href="omnis-possimus-maxime">
                         Omnis possimus maxime
                     </a>
                     <div class="category1007" style="display:none;">
@@ -139,7 +163,7 @@
                                             </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1008" href="est-et">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1008" href="est-et">
                         Est et
                     </a>
                     <div class="category1008" style="display:none;">
@@ -149,7 +173,7 @@
                                             </div>
                 </div>
                                 <div class="category">
-                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1009" href="nihil-sapiente-assumenda">
+                    <a class="d-block" style="border:solid px #fff;" onmouseover="fillcard(this)" target="category1009" href="nihil-sapiente-assumenda">
                         Nihil sapiente assumenda
                     </a>
                     <div class="category1009" style="display:none;">

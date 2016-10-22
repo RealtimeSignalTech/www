@@ -5,8 +5,10 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: 1000,
 		dots: true,
-		variableWidth: true,
-		rows: 1,
+		adaptiveHeight: true
+		
 		});
-      
+      $(window).resize(function() {
+  $('.js-slider').slick('resize');
+});
     });
