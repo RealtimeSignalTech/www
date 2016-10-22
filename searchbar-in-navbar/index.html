@@ -14,23 +14,27 @@
 <script>
 </script>
 
+<br>
+<br>
 
-<nav class="bb m-t-2 navbar navbar-light bg-faded">
+<nav class="navbar navbar-light bg-faded">
 <div class="row">
-    <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+    <div class="rb col-xs-3 col-sm-2 hidden-md-up col-lg-1">
         <ul class="nav navbar-nav pull-xs-left">
             <li class="nav-item active">
-                <a class="nav-link" href="#"><i class="fa fa-bars"></i></a>
+                <a class="nav-link" href="#" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
+                <div class="dropdown-menu" style="border:0;background-color:transparent;"> <!-- TODO: need to fix width -->
+                </div>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
             </li>
         </ul>
     </div>
-    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-1">
+    <div class="rb col-xs-6 col-sm-6 col-md-2 col-lg-2">
         <a class="navbar-brand" href="#">NAVBARR</a>
     </div>
-    <div class="col-xs-5 col-sm-4 push-sm-6  col-md-3 push-md-7   col-lg-4 push-lg-7">
+    <div class="bb col-xs-3 col-sm-4 col-md-5 push-md-5 col-lg-5 push-lg-5">
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item active hidden-sm-down">
                 <a class="nav-link" href="#">For instructors <span class="sr-only">(current)</span></a>
@@ -43,11 +47,11 @@
             </li>
         </ul>
     </div>
-    <div class="hidden-sm-down col-xs-12 col-sm-6 pull-sm-4   col-md-7 pull-md-3   col-lg-7 pull-lg-4">
+    <div class="gb p-x-0 col-xs-12 col-sm-12 col-md-5 pull-md-5 col-lg-5 pull-lg-5">
         <div class="input-group">
             <div class="input-group-btn">
                 <button type="button" class="btn btn-secondary hidden-sm-down" data-toggle="dropdown">
-                    &#9776;
+                    <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-menu" style="border:0;background-color:transparent;width:600px;"> <!-- TODO: need to fix width -->
                 </div>
@@ -173,7 +177,7 @@
                                             </div>
                 </div>
                             </div>
-            <div class="card category-courses">
+            <div class="hidden-sm-down card category-courses">
                                                 <a class="d-block" href="eius-harum-minus/10000022/content">
                             Eius harum minus
                         </a>
@@ -194,6 +198,8 @@ $(document).ready(function() {
     $('.dropdown-menu').html($('#dbg').html());
 });
 </script>
+
+
 
 </body>
 </html>
