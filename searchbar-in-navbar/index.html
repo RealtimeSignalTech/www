@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<title>Searchbar-in-navbar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/generic.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script>
+</script>
+
+<br>
+<br>
+
+<nav class="navbar navbar-light bg-faded">
+<div class="row">
+    <div class="rb col-xs-3 col-sm-2 hidden-md-up col-lg-1">
+        <ul class="nav navbar-nav pull-xs-left">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
+                <div class="dropdown-menu" style="border:0;background-color:transparent;"> <!-- TODO: need to fix width -->
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="rb col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        <a class="navbar-brand" href="#">NAVBARR</a>
+    </div>
+    <div class="bb col-xs-3 col-sm-4 col-md-5 push-md-5 col-lg-5 push-lg-5">
+        <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item active hidden-sm-down">
+                <a class="nav-link" href="#">For instructors <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active hidden-sm-down">
+                <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">SIGNIN</a>
+            </li>
+        </ul>
+    </div>
+    <div class="gb p-x-0 col-xs-12 col-sm-12 col-md-5 pull-md-5 col-lg-5 pull-lg-5">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-secondary hidden-sm-down" data-toggle="dropdown">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" style="border:0;background-color:transparent;width:600px;"> <!-- TODO: need to fix width -->
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="What do you want to learn today!">
+        </div>
+    </div>
+</div>
+</nav>
+
+
+
+<div id="dbg" style="display:none;">
+        <div class="card-group">
+            <div class="card">
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1000" href="vitae-est-at">
+                        Vitae est at
+                    </a>
+                    <div class="category1000" style="display:none;">
+                                                <a class="d-block" href="eius-harum-minus/10000022/content">
+                            Eius harum minus
+                        </a>
+                                                <a class="d-block" href="ducimus-commodi/10000024/content">
+                            Ducimus commodi
+                        </a>
+                                                <a class="d-block" href="quia-nobis-quidem/10000030/content">
+                            Quia nobis quidem
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1001" href="tenetur-dolor-ullam">
+                        Tenetur dolor ullam
+                    </a>
+                    <div class="category1001" style="display:none;">
+                                                <a class="d-block" href="velit-magnam/10000019/content">
+                            Velit magnam
+                        </a>
+                                                <a class="d-block" href="sunt-dolores-aut/10000023/content">
+                            Sunt dolores aut
+                        </a>
+                                                <a class="d-block" href="dolores-dolores/10000032/content">
+                            Dolores dolores
+                        </a>
+                                                <a class="d-block" href="dolore-est/10000036/content">
+                            Dolore est
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1003" href="voluptas-et-maxime">
+                        Voluptas et maxime
+                    </a>
+                    <div class="category1003" style="display:none;">
+                                                <a class="d-block" href="sed-possimus/10000021/content">
+                            Sed possimus
+                        </a>
+                                                <a class="d-block" href="quisquam-doloribus/10000026/content">
+                            Quisquam doloribus
+                        </a>
+                                                <a class="d-block" href="sequi-sint-facere/10000027/content">
+                            Sequi sint facere
+                        </a>
+                                                <a class="d-block" href="sunt-quod-quaerat/10000031/content">
+                            Sunt quod quaerat
+                        </a>
+                                                <a class="d-block" href="voluptatem-dolore-expedita/10000034/content">
+                            Voluptatem dolore expedita
+                        </a>
+                                                <a class="d-block" href="est-vero-non/10000035/content">
+                            Est vero non
+                        </a>
+                                                <a class="d-block" href="sapiente-reiciendis/10000037/content">
+                            Sapiente reiciendis
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1006" href="earum-rerum">
+                        Earum rerum
+                    </a>
+                    <div class="category1006" style="display:none;">
+                                                <a class="d-block" href="corrupti-molestiae/10000028/content">
+                            Corrupti molestiae
+                        </a>
+                                                <a class="d-block" href="neque-dolorem-atque/10000038/content">
+                            Neque dolorem atque
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1007" href="omnis-possimus-maxime">
+                        Omnis possimus maxime
+                    </a>
+                    <div class="category1007" style="display:none;">
+                                                <a class="d-block" href="esse-dolorem/10000033/content">
+                            Esse dolorem
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1008" href="est-et">
+                        Est et
+                    </a>
+                    <div class="category1008" style="display:none;">
+                                                <a class="d-block" href="ab-et-libero/10000025/content">
+                            Ab et libero
+                        </a>
+                                            </div>
+                </div>
+                                <div class="category">
+                    <a class="d-block" style="border:solid 1px #fff;" onmouseover="fillcard(this)" target="category1009" href="nihil-sapiente-assumenda">
+                        Nihil sapiente assumenda
+                    </a>
+                    <div class="category1009" style="display:none;">
+                                                <a class="d-block" href="labore-quis/10000020/content">
+                            Labore quis
+                        </a>
+                                                <a class="d-block" href="eum-officiis-nihil/10000029/content">
+                            Eum officiis nihil
+                        </a>
+                                            </div>
+                </div>
+                            </div>
+            <div class="hidden-sm-down card category-courses">
+                                                <a class="d-block" href="eius-harum-minus/10000022/content">
+                            Eius harum minus
+                        </a>
+                                                <a class="d-block" href="ducimus-commodi/10000024/content">
+                            Ducimus commodi
+                        </a>
+                                                <a class="d-block" href="quia-nobis-quidem/10000030/content">
+                            Quia nobis quidem
+                        </a>
+                                            </div>
+        </div>
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+    $('.dropdown-menu').html($('#dbg').html());
+});
+</script>
+
+
+
+</body>
+</html>

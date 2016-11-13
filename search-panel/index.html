@@ -6,12 +6,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/owl.theme.css">
         <!-- custom styles -->
         <style>
             body{
@@ -29,7 +28,7 @@
                 margin: 0 auto;
                 border-radius: 3px; 
             }
-            input {
+            input{
                 width: 100%;
                 height: 53px;
                 box-shadow: none;
@@ -39,8 +38,7 @@
                 background: rgba(0, 0, 0, 0.7);
                 color: #ffffff;
                 font-size: 16px;
-                font-weight: 300;
-                
+                font-weight: 300;                
                 display: inline-block;
             }
 
@@ -48,7 +46,6 @@
                 text-align: center;
                 color: #ffffff;
                 display: inline-block;
-                
                 margin-top: 20px;
             }
 
@@ -62,11 +59,13 @@
                 list-style: none;
                 float: left;
                 color: #fff;
+                margin: 0 auto; 
                 }
             .list-inline li{
                 display: inline-block;
                 margin-left: 50px;                
             }
+            
         </style>
     </head>
     
@@ -84,22 +83,21 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  m-t-2 m-b-2">
                         
-                            <div class="col-lg-6 col-md-6">
-                                <input maxlength="255" placeholder="Search for a Course" id="search-inp1" type="text">
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+                                <input maxlength="255" placeholder="Search for a Course" type="text">
                             </div>
-
                             <div class="col-lg-1 col-md-1">
-                                <span class="OR">&nbsp;OR&nbsp;</span>
+                                <div class="OR d-block">OR</div>
                             </div>
-                            <div class="col-lg-5 col-md-5">
+                            <div class="col-lg-5 col-md-5 col-xs-12">
                                 <button class="btn btn-primary btn-lg btn-block">Browse Courses</button>
-                            </div>
+                            </div>                            
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <p class="popular-course m-l-1">
-                            <span style="color: #fff;" >Jump to :</span>
+                        <span style="color: #fff;">Jump to:</span>
                            <a href="#">Big Data Hadoop</a>,
                            <a href="#">DevOps</a>,
                            <a href="#">AWS</a>,
@@ -114,12 +112,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-xs-6">
                         <ul id="search-list" class="list-inline">
                             <li>
                                 <h4> 111,111</h4>
                                 <p>Satisfied Learners</p>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <ul id="search-list" class="list-inline">
                             <li>
                                 <h4>50,000+ Hrs</h4>
                                 <p>Classes Delivered</p>
@@ -127,12 +129,16 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-xs-6">
                         <ul class="list-inline">
                             <li>
                                 <h4>1000+</h4>
                                 <p>Assignments</p>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <ul class="list-inline">    
                             <li>
                                 <h4>100+</h4>
                                 <p>Projects</p>
@@ -150,11 +156,9 @@
 
 
         <!-- scripts -->    
-        <script src="js/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
         <!-- for bootstrap tooltips to be used, tether is included -->
-        <script src="js/tether.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="../js/tether.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -13,6 +13,24 @@
         
         <!-- custom styles -->
         <style>
+            body{
+                padding-top: 50px;
+                padding-bottom: 20px;
+                background-color:#f3f3f3;
+            }
+            .bg-white{
+                background-color: #ffffff;
+                padding: 0rem;
+                border: 1px solid #e8e8e8;
+            }
+
+            .browse_head{
+                padding: 14px 22px;
+                border-bottom: 1px solid #dddddd;
+                color: #474747;
+                font-size: 14px; 
+            }
+
             
         </style>
     </head>
@@ -25,55 +43,51 @@
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active"><a href="#">All Courses</a></li>
             </ol>
-        </div>
+        </div><!--row ends-->
 
+        <div class="row">
             <!-- Courses browse grid-->
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="bg-white">    
+                <!-- Courses browse block-->
+                    <div class="browse_head">
+                    <h4>Browse Courses</h4></div>
+                    <div class="all_courses">
+                    <a href="#">ALL COURSES<span><i class="fa fa-chevron-right pull-right"></i></span></a><br></div>
+                    <div class="popular_courses">
+                    <a href="#">POPULAR COURSES<span><i class="fa fa-chevron-right pull-right"></i></span></a><br></div>
+                    <p>CATEGORIES <a href="#" class="pull-right">View all</a></p>
+                        <ul>
+                            <li><input class="form-check-input" type="checkbox"> Big Data and Analytics</li>
+                            <li><input class="form-check-input" type="checkbox"> Cloud Computing</li>
+                            <li><input class="form-check-input" type="checkbox"> Business Intelligence & Visualization</li>
+                            <li><input class="form-check-input" type="checkbox"> DevOps</li>
+                        </ul>
+
+                    <!--Refine your search block-->
+                        <h4>Refine your search</h4>
+                        <p>TRAINING TYPE</p>
+                            <ul>
+                                <li><input class="form-check-input" type="checkbox"> Live Instructor-Led </li>
+                                <li><input class="form-check-input" type="checkbox"> Self-paced</li>
+                            </ul>
+                        <p>BATCH TYPE</p>
+                            <ul>
+                                <li><input class="form-check-input" type="checkbox"> Weekend </li>
+                                <li><input class="form-check-input" type="checkbox"> Weekdays</li>
+                            </ul>            
+                    <!--Refine your search block ends-->
                 
-            <!-- Courses browse block-->
-                <h4 class="form-control-static">Browse Courses</h4>
-                <a href="#" class="form-control-static">ALL COURSES<span>></span></a><br>
-                <a href="#" class="form-control-static">POPULAR COURSES<span>></span></a><br>
-                <p>CATEGORIES <a href="#">View all</a></p>
-                    <ul>
-                        <li><input class="form-check-input" type="checkbox"> Big Data and Analytics</li>
-                        <li><input class="form-check-input" type="checkbox"> Cloud Computing</li>
-                        <li><input class="form-check-input" type="checkbox"> Business Intelligence & Visualization</li>
-                        <li><input class="form-check-input" type="checkbox"> DevOps</li>
-                    </ul>
-            
-        
-
-        
-            <div><!--Refine your search block-->
-                <h4>Refine your search</h4>
-                <p>TRAINING TYPE</p>
-                    <ul>
-                        <li><input class="form-check-input" type="checkbox"> Live Instructor-Led </li>
-                        <li><input class="form-check-input" type="checkbox"> Self-paced</li>
-                    </ul>
-                <p>BATCH TYPE</p>
-                    <ul>
-                        <li><input class="form-check-input" type="checkbox"> Weekend </li>
-                        <li><input class="form-check-input" type="checkbox"> Weekdays</li>
-                    </ul>
-            </div>
-
-            <!--partner with org-->
-            <div class="col-md-12">
-                <h5>Igloo for Organizations</h5>
-                <div class="col-md-8">
-                    <p class="small-font">Your organization's partner for all professional trainings</p>
-                    <a href="#" class="btn btn-primary btn-xs learn-btn">Learn More</a>
-                  </div>
-                <div class="col-md-4">
-                    <img src="./img/handshake.png" style="opacity: 0.5; vertical-align: middle;">
+                <!--partner with org-->            
+                    <h5>Igloo for Organizations</h5>               
+                        <p class="small-font">Your organization's partner for all professional trainings</p>
+                        <a href="#" class="btn btn-primary btn-xs learn-btn">Learn More</a>      
+                        <img src="./img/handshake.png">               
+                <!-- end of partner with org-->
                 </div>
-            </div><!-- end of partner with org-->
-
             </div>
-        </div>
-    </div>    
+        </div><!--row ends-->            
+    </div><!--Container ends-->    
     
         
 
