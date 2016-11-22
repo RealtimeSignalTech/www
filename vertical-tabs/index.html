@@ -20,25 +20,38 @@
 
 
 
-<div class="my-2 container">
-<ul class="col-xs-4 nav nav-tabs nav-stacked">
-    <li class="nav-item"><a class="nav-link" href="#tab1" data-toggle="tab">Tab 1</a></li>
-    <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab">Tab 2</a></li>
-    <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab">Tab 3</a></li>
-</ul>
-<div class="col-xs-8 tab-content">
-    <div class="tab-pane fade in active" id="tab1">
-        Tab 1 content
+<div class="container mt-1 bb">
+    <ul class="col-xs-4 nav nav-stacked" role="tablist">
+        <li class="nav-item"><a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">Tab-1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab2" role="tab" data-toggle="tab">Tab-2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab3" role="tab" data-toggle="tab">Tab-3</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab4" role="tab" data-toggle="tab">Tab-4</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab5" role="tab" data-toggle="tab">Tab-5</a></li>
+    </ul>
+    <div class="col-xs-8 tab-content">
+        <div class="tab-pane active" role="tabpanel" id="tab1">Tab-1-content</div>
+        <div class="tab-pane" role="tabpanel" id="tab2">Tab-2-content</div>
+        <div class="tab-pane" role="tabpanel" id="tab3">Tab-3-content</div>
+        <div class="tab-pane" role="tabpanel" id="tab4">Tab-4-content</div>
+        <div class="tab-pane" role="tabpanel" id="tab5">Tab-5-content</div>
     </div>
-    <div class="tab-pane fade in" id="tab2">
-        Tab 2 content
-    </div>
-    <div class="tab-pane fade in" id="tab3">
-        Tab 3 content
-    </div>
-</div>
 </div>
 
+
+<div class="container mt-1">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">home</div>
+        <div class="tab-pane" id="profile" role="tabpanel">profile</div>
+        <div class="tab-pane" id="messages" role="tabpanel">message</div>
+        <div class="tab-pane" id="settings" role="tabpanel">settings</div>
+    </div>
+</div>
 
 
 </body>
