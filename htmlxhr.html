@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <!-- custom styles -->
+        <style>
+            .card{
+            	width: 318px;
+            	margin: 100px auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+    <body>
+        <div class="card">
+          <img class="card-img-top" src="./img/dev.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Champions title</h4>
+            <p class="card-text">Some random stuff to make it look bulky.</p>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true" id="ajaxButton"></i> <span id="cc"></span>
+          </div>
+        </div>
+        <script type="text/javascript">
+        (function() {
+                var httpRequest;
+                var click=0;
+                document.getElementById("ajaxButton").onclick = function() {
+                    counter();
+                    
+                };
+
+                function counter() {
+                	click++;
+                	document.getElementById("cc").innerHTML = click;
+                }
+
+                function makeRequest(url) {
+
+                    httpRequest = new XMLHttpRequest();
+
+                    if (!httpRequest) {
+                        alert('Giving up :( Cannot create an XMLHTTP instance');
+                        return false;
+                    }
+                    
+                    httpRequest.onreadystatechange = alertContents;
+                    httpRequest.open('GET', url);
+                    httpRequest.send();
+
+                }
+
+                function alertContents() {
+                    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                        if(httpRequest.status === 200) {
+                            alert(httpRequest.responseText);
+                        } else {
+                            alert('There was a problem with the request.');
+
+                        }
+                    }
+                }
+            })();
+        </script>
+        <!-- scripts -->    
+        <script src="js/jquery.min.js"></script>
+        <!-- for bootstrap tooltips to be used, tether is included -->
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    </body>
+</html>
