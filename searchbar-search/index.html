@@ -28,7 +28,7 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false">
-            <div class="searchbardd col-xs-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="searchbardd invisible col-xs-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <!--<a class="dropdown-item" href="#">search Action</a>
                 <a class="dropdown-item" href="#">search Another action</a>
                 <a class="dropdown-item" href="#">search Something else here</a>-->
@@ -51,6 +51,7 @@ $(document).ready(function() {
 
     $("#dropdownMenuButton").keyup(function (e) {
         $('.searchbardd').html('');
+        //console.log($(this).val().length);
         if($(this).val().length){
             cnt = 0;
             for(i = 0; i < library.length; i++){
@@ -60,6 +61,14 @@ $(document).ready(function() {
                     cnt++;
                 }
             }
+            if(cnt == 0){
+                ex = "<a class=\"dropdown-item\" href=\"#\">No results found!!</a>";
+                $('.searchbardd').append(ex);
+            }
+            $('.searchbardd').removeClass('invisible');
+        }
+        else {
+            $('.searchbardd').addClass('invisible');
         }
     });
 
