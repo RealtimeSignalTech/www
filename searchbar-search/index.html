@@ -29,9 +29,9 @@
                 aria-haspopup="true"
                 aria-expanded="false">
             <div class="searchbardd col-xs-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">search Action</a>
+                <!--<a class="dropdown-item" href="#">search Action</a>
                 <a class="dropdown-item" href="#">search Another action</a>
-                <a class="dropdown-item" href="#">search Something else here</a>
+                <a class="dropdown-item" href="#">search Something else here</a>-->
             </div>
         </div>
     </form>
@@ -54,7 +54,7 @@ $(document).ready(function() {
         if($(this).val().length){
             cnt = 0;
             for(i = 0; i < library.length; i++){
-                if(library[i].search($(this).val()) != -1){
+                if(library[i].toLowerCase().search($(this).val().toLowerCase()) != -1){
                     ex = "<a class=\"dropdown-item\" href=\"#\">"+library[i]+"</a>";
                     $('.searchbardd').append(ex);
                     cnt++;
