@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Demo of POST, storing a sentence into a text file.</title>
+
+<script src="ajax.js" type="text/javascript"></script>
+<script language="JavaScript">
+
+	function Write(url, content)	// url is the script and data is a string of parameters
+	{ 
+		var xhr = createXHR();
+
+		xhr.onreadystatechange=function()
+		{ 
+			if(xhr.readyState == 4)
+			{
+				//alert("Sent " + content);
+			}
+		}; 
+		xhr.open("POST", url, true);		
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send(content); 
+	} 
+
+
+	function submitForm()
+	{ 
+		var content = document.ajax.sentence.value;
+		Write("ajax-post-text.php", "file=ajax-post-text.txt&content=" + content);
+		var storing = document.getElementById("storage");
+		storing.innerHTML = "<p>Now you can view what you sent in the file <b><a href='ajax-post-text.txt' target='_parent'>ajax-post-text.txt</a></b>. ";
+	} 
+
+</script>
+
+</head>
+
+	
+<body bgcolor="#FFFFFF">
+<h1>Ajax POST Demo - Sending a Plain Text</h1>
+<p>Storing a text into a file. View the JavaScript code in the source and the 
+  <a href="ajax.js" target="_parent">ajax.js</a> source.</p>
+
+<p> The demo makes use of a short <a href="ajax-post-text-php.txt" target="_parent">PHP 
+  script</a> to receive the data and put it into a text file. </p>
+<p> Enter a text into the field below and click on the submit button at right 
+  to send it to the server.<br>
+  Then you can retrieve your text by a click on the link that will appear below 
+  the form.</p>
+<p>For security issue, the name of the file to create must be defined and recognized 
+  on the server.</p>
+<FORM name="ajax" method="POST" action="">
+  <p>
+    <input type="text" name="sentence" value="I believe it is not possible to prove anything. But I can't prove it." size="80">
+    <INPUT type="button" value="Submit"  ONCLICK="submitForm()">
+  </p>
+</FORM>
+
+<div id="storage"> Nothing for now. </div>	
+
+
+<p> &copy;<a href="http://www.xul.fr/en/" target="_parent"> xul.fr</a></p>
+</body>
+</html>

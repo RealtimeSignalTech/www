@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<script language="JavaScript">
+
+	function submitForm()
+	{ 
+		var req = null; 
+
+		document.getElementById("zone").innerHTML = "Started...";
+ 
+		if (window.XMLHttpRequest)
+		{
+ 			req = new XMLHttpRequest();
+			if (req.overrideMimeType) 
+			{
+				req.overrideMimeType('text/xml');
+			}
+		} 
+		else if (window.ActiveXObject) 
+		{
+			try {
+				req = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e)
+			{
+				try {
+					req = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (e) {}
+			}
+	        	}
+
+
+
+		req.onreadystatechange = function()
+		{ 
+			document.getElementById("zone").innerHTML = "Wait server...";
+			if(req.readyState == 4)
+			{
+				if(req.status == 200)
+				{
+					document.getElementById("zone").innerHTML  = "Received: " + req.responseText;	
+				}	
+				else	
+				{
+					document.getElementById("zone").innerHTML="Error: returned status code " + req.status + " " + req.statusText;
+				}	
+			} 
+		}; 
+		req.open("GET", "demo.txt", true); 
+		req.send(null); 
+	} 
+	</script>
+	<title>Ajax demo - Get text and display in body of page</title></head>
+
+	
+<body bgcolor="#FFFFFF">
+<h1>Ajax get to body demo<br>
+  <font size="+1">Get a text from the server, display it in the body of the page 
+  </font> </h1>
+<FORM name="ajax" method="POST" action="">
+  <p>
+    <INPUT type="BUTTON" value="Submit"  ONCLICK="submitForm()">
+  </p>
+</FORM>
+	<br>
+	<br>	
+	<div id="zone">
+	Waiting...
+	</div> 	
+	<br>
+<br>
+<br>
+<a href="http://www.xul.fr/en-xml-ajax.html" target="_parent">Ajax tutorial</a> 
+</body>
+</html>
