@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p{position:relative;width:500px; border:1px solid red;}
+
+p::after { 
+    content: "\00a9";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    position:absolute;
+    top:2px;
+    right:0px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<p>My name is DonaldMy name is DonaldMy name is DonaldMy name is Donas ldMy name is Donald</p>
+<p>I live in Ducksburg</p>
+
+<p><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+</div>
+
+</body>
+</html>
