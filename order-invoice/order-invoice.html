@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Order summary</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.min-a5.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../css/generic.css">
+<!-- scripts -->    
+<script src="../js/jquery.min.js"></script>
+<!-- for bootstrap tooltips to be used, tether is included -->
+<script src="../js/tether.min.js"></script>
+<script src="../js/bootstrap.min-a5.js"></script>
+
+<style>
+@media(max-width:543 px) { body { font-size: 16px; }}
+@media(max-width:767 px) { body { font-size: 20px; }}
+@media(max-width:991 px) { body { font-size: 28px; }}
+@media(max-width:1199 px){ body { font-size: 32px; }}
+</style>
+</head>
+<body>
+<!----module code starts---->
+
+<div class="container mt-1">
+<div class="col-xs-12 col-md-8">
+<div class="card">
+    <div class="card-header">
+        <ul class="card-header-tabs nav nav-tabs nav-tabs-nostyle float-xs-left" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" role="tab" href="#pay_crd">Credit card / Debit card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" role="tab" href="#pay_pal">PayPal</a>
+            </li>
+        </ul>
+        <ul class="hidden-md-down card-header-tabs nav nav-tabs nav-tabs-nostyle float-xs-right" role="tablist">
+            <li class="nav-item" style="margin-top:4px;">
+                <span>Transaction 256 bit encrypted</span>
+            </li>
+        </ul>
+    </div>
+    <div class="card-block">
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="pay_crd" role="tabpanel">
+                <div class='row'>
+                    <div class='col-sm-6'>
+                        <form action="{{ url('payment/payumoney/process') }}" method="post" name="payuForm">
+                            <input type="hidden" name="udf1" value="{{ $course->id }}" />
+                            <input type="hidden" name="udf2" value="{{ $course->slug }}" />
+                            <button href="#" class="btn btn-primary btn-block">PayuMoney</button>
+                        </form>
+                    </div>
+                    <div class='col-sm-6'>
+                        <form action="{{ url('payment/ccavenue/process') }}" method="post" name="ccaForm">
+                            <input type="hidden" name="merchant_param1" value="{{ $course->id }}" />
+                            <input type="hidden" name="merchant_para-m2" value="{{ $course->slug }}" />
+                            <button href="#" class="btn btn-primary btn-block" disabled>CCAvenue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pay_pal" role="tabpanel">
+                <div class='col-sm-6'>
+                </div>
+                <div class='col-sm-6'>
+                    <form action="{{ url('payment/process') }}" method="post" name="payuForm">
+                        <button href="#" class="btn btn-primary btn-block" disabled>PayPal Securely</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container mt-1">
+    <div class="col-xs-12 col-md-8">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item h5"><b>Order Summary</b></li>
+                <li class="list-group-item"><b>Course: Machine Learning</b></li>
+                <span class="text-xs-right">
+                    <li class="list-group-item"><dl><dt class="col-xs-9">Price:</dt><dd class="col-xs-3">2000</dd></dl></li>
+                    <li class="list-group-item"><dl><dt class="col-xs-9">Discount:</dt><dd class="col-xs-3">50%</dd></dl></li>
+                    <li class="list-group-item"><dl><dt class="col-xs-9">Net Amount:</dt><dd class="col-xs-3">2000</dd></dl></li>
+                    <li class="list-group-item"><dl><dt class="col-xs-9">Service Tax/SBT (15 %):</dt><dd class="col-xs-3">1234</dd></dl></li>
+                    <li class="list-group-item"><dl><dt class="col-xs-9">Total:</dt><dd class="col-xs-3">2234</dd></dl></li>
+                </span>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
