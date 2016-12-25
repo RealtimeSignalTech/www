@@ -19,6 +19,9 @@
     margin-right: $margin;
     margin-bottom: $margin;
   }
+  &:nth-child(even){ // every child
+      opacity: 0.1;
+  }
   &:nth-child(#{$ncol}n){ // every x*nth child
     margin-right: 0;
     //margin-bottom: 0;
@@ -29,12 +32,27 @@
   @include clearfix;
   .item{
     float: left;
-    @include imagegrid(6, 2%);
+    @include imagegrid(6, 1%);
   }
   img{
     display: block;
-    //border: 1px solid red;
+    //border: 2px solid lighten(red, 30%);
     border-radius: 10px;
     max-width: 100%;
+    &:hover{
+      opacity: 0.1;
+    }
+  }
+}
+
+.tartan{
+  td{
+    background-color: white;
+    padding: 10px;
+  }
+  tr:nth-child(odd) td:nth-child(odd),
+  tr:nth-child(even) td:nth-child(even){
+    background-color: black;
+    color: white;
   }
 }
