@@ -19,9 +19,6 @@
     margin-right: $margin;
     margin-bottom: $margin;
   }
-  &:nth-child(even){ // every child
-      opacity: 0.1;
-  }
   &:nth-child(#{$ncol}n){ // every x*nth child
     margin-right: 0;
     //margin-bottom: 0;
@@ -45,7 +42,7 @@
   }
 }
 
-.tartan{
+table{
   td{
     background-color: white;
     padding: 10px;
