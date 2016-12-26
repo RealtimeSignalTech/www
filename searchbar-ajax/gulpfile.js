@@ -7,29 +7,23 @@ const livereload = require('gulp-livereload');
 gulp.task('sass', () =>
     sass('./*.scss', {sourcemap: true})
         .on('error', sass.logError)
-        // for inline sourcemaps 
         .pipe(sourcemaps.write())
-        // for file sourcemaps 
         .pipe(sourcemaps.write('maps', {
             includeContent: false,
             sourceRoot: 'source'
         }))
         .pipe(gulp.dest('.'))
-        //.pipe(livereload())
+        .pipe(livereload())
 );
 
 gulp.task('html', function() {
-    gulp.src('./**/*.html');
-});
-
-gulp.task('js', function() {
-    gulp.src('./**/*.js');
+    gulp.src('./**/*.html')
+        .pipe(livereload())
 });
 
 gulp.task('watch', function() {
-    //livereload.listen();
+    livereload.listen();
     gulp.watch('./**/*.html', ['html']);
-    gulp.watch('./**/*.js', ['js']);
     gulp.watch('./**/*.scss', ['sass']);
 });
 

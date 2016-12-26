@@ -15,10 +15,10 @@
 <body>
 <!----module code starts---->
 
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/styles.css">
 
 <div class="container mt-2">
-    <h4>Search using AJAX</h4>
+    <h4>Search using Ajax</h4>
     <form class="rwform-inline-x col-xs-12 col-md-8 px-0">
         <div class="dropdown">
             <input class="form-control" type="text" placeholder="Search"
@@ -27,9 +27,6 @@
                 aria-haspopup="true"
                 aria-expanded="false">
             <div class="searchbardd invisible col-xs-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <!--<a class="dropdown-item" href="#">search Action</a>
-                <a class="dropdown-item" href="#">search Another action</a>
-                <a class="dropdown-item" href="#">search Something else here</a>-->
             </div>
         </div>
     </form>
@@ -37,26 +34,33 @@
 
 
 <script>
-var library = [ "Apple","Mango","Peach","Banana","Orange","Grapes","Watermelon","Tomato" ];
 
 $(document).ready(function() {
 
-    for(i = 0; i < library.length; i++){
-        console.log(library[i]);
-        //ex = "<a class=\"dropdown-item\" href=\"#\">"+library[i]+"</a>";
-        //$('.searchbardd').append(ex);
+    if(localStorage.library == null){
+        $.getJSON('courses.json', null, function(data){
+            localStorage.library = JSON.stringify(data);
+            console.log(data)
+        });
     }
 
     $("#dropdownMenuButton").keyup(function (e) {
+        if(localStorage.library == null){
+            return;
+        }
+
         $('.searchbardd').html('');
-        //console.log($(this).val().length);
+
         if($(this).val().length){
             cnt = 0;
+            var library = JSON.parse(localStorage.library);
             for(i = 0; i < library.length; i++){
-                if(library[i].toLowerCase().search($(this).val().toLowerCase()) != -1){
-                    ex = "<a class=\"dropdown-item\" href=\"#\">"+library[i]+"</a>";
-                    $('.searchbardd').append(ex);
-                    cnt++;
+                for(j = 0; j < library[i].courses.length; j++){
+                    if(library[i].courses[j].course_name.toLowerCase().search($(this).val().toLowerCase()) != -1){
+                        ex = "<a class=\"dropdown-item\" href=\"" + library[i].category_slug + "/" + library[i].courses[j].course_slug + "\">" + library[i].courses[j].course_name +"</a>";
+                        $('.searchbardd').append(ex);
+                        cnt++;
+                    }
                 }
             }
             if(cnt == 0){
@@ -69,7 +73,6 @@ $(document).ready(function() {
             $('.searchbardd').addClass('invisible');
         }
     });
-
 });
 
 </script>
