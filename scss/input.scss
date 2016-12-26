@@ -53,3 +53,34 @@ table{
     color: white;
   }
 }
+
+.alphabet {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid white;
+
+  a {
+    color: black;
+    text-decoration: none;
+    background-color: inherit;
+    width: 30px;
+
+    &:after {
+      content: '\007c';
+      padding-left: 4px;
+    }
+    &:last-of-type {
+      &:after {
+        content: '';
+      }
+    }
+
+    /*&:nth-child(n) {
+      border-right: 1px solid red;
+      padding-right: 4px;
+    }
+    &:last-of-type {
+      border-right: 0;
+    }*/
+  }
+}
