@@ -36,16 +36,17 @@
 <script>
 
 $(document).ready(function() {
+    var hash = "1"; //has tobe sent in html to cross verify
 
-    if(localStorage.library == null){
+    if((localStorage.courses == null) || (JSON.parse(localStorage.courses).hash !== hash)){
         $.getJSON('courses.json', null, function(data){
-            localStorage.library = JSON.stringify(data);
-            console.log(data)
+            localStorage.courses = JSON.stringify(data);
+            console.log(data);
         });
     }
 
     $("#dropdownMenuButton").keyup(function (e) {
-        if(localStorage.library == null){
+        if(localStorage.courses == null){
             return;
         }
 
@@ -53,7 +54,7 @@ $(document).ready(function() {
 
         if($(this).val().length){
             cnt = 0;
-            var library = JSON.parse(localStorage.library);
+            var library = JSON.parse(localStorage.courses).library;
             for(i = 0; i < library.length; i++){
                 for(j = 0; j < library[i].courses.length; j++){
                     if(library[i].courses[j].course_name.toLowerCase().search($(this).val().toLowerCase()) != -1){
