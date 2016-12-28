@@ -37,21 +37,23 @@
     </nav>
 </div>
 <script>
-var flag = 0;
 function allcourses(){
-    if(!flag && localStorage.courses){
-        flag = 1;
+    if(localStorage.courses){
         var data = JSON.parse(localStorage.courses).library;
         var htmlcat = '';
         var htmlcou = '';
         $("#libdd .lib_cats").html(htmlcat);
         $("#libdd .lib_cous").html(htmlcou);
         $.each(data, function(index, cat){
-            htmlcat += '<a onmouseover="fillcard(\'.category' + index + '\');" class="d-block ml-1" href="/' + cat.category_slug + '">' + cat.category_name + '</a>';
+            htmlcat += '<a onmouseover="fillcard(\'.category' + index + '\');" class="d-block ml-1" href="/' + cat.category_slug + '">'
+                + cat.category_name
+                + '<span class="category' + index + '-arrow hidden-sm-down float-xs-right invisible">'
+                + '<i class="fa fa-play fa-flip-horizontal" aria-hidden="true"></i>'
+                + '</span>'
+                + '</a>';
             htmlcou += '<div class="xinvisible category' + index + '" style="display:none">'
             $.each(cat.courses, function(idx, cou){
                 htmlcou += '<a class="d-block ml-1" href="/' + cat.category_slug + '/' + cou.course_slug + '">' + cou.course_name + '</a>';
-                console.log("--", idx, cou.course_slug);
             });
             htmlcou += '</div>';
         });
