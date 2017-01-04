@@ -1,0 +1,24 @@
+.container {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.card-block {
+    padding:4px !important;
+    box-shadow:#ddd 0px 1px 8px;
+}
+#searchform .element {
+    &:nth-child(n) {
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+    &:last-child {
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+    .form-control {
+        padding: 0px;
+    }
+    #name-search-patrn {
+        padding: 5px 2px 5px 4px;
+    }
+}
