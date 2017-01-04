@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/bootstrap.min-a5.css">
+    <!--<link rel="stylesheet" href="/css/bootstrap.min-a5.css">-->
+    <link rel="stylesheet" href="/app.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/generic.css">
     <script src="/js/jquery.min.js"></script>
@@ -79,6 +80,62 @@
     <div class="item"><img src="http://www.placehold.it/500x500" alt=""></div>
 </div>
 -->
+
+<div class="container mt-2">
+<div class="card card-block mb-0" style="padding:10px;">
+<div id="searchform" xaction="/baby-name-search" xmethod="get" class="clearfix">
+    <div class="col-xs-12 col-lg-3 xpl-0">
+        <div class="form-group mb-0">
+            <select class="form-control py-0" id="name-search-tag" name="tag">
+                <option value="australian">Australian</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="indian" selected="">Indian</option>
+                <option value="assamese">- Assamese</option>
+                <option value="bengali">- Bengali</option>
+                <option value="gujarati">- Gujarati</option>
+                <option value="hindu">- Hindu</option>
+                <option value="kannada">- Kannada</option>
+                <option value="malayalam">- Malayalam</option>
+                <option value="marathi">- Marathi</option>
+                <option value="sanskrit">- Sanskrit</option>
+                <option value="sikh">- Sikh</option>
+                <option value="sindhi">- Sindhi</option>
+                <option value="tamil">- Tamil</option>
+                <option value="telugu">- Telugu</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-xs-12 col-lg-2 xpl-0">
+        <div class="form-group mb-0">
+            <select class="form-control py-0" id="name-search-gender" name="gender">
+                <option value="boy" selected="">Boy</option>
+                <option value="girl">Girl</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-xs-12 col-lg-3 xpl-0">
+        <div class="form-group mb-0">
+            <select class="form-control py-0" id="name-search-option" name="option">
+                <option value="begins" selected="">Begins</option>
+                <option value="ends">Ends</option>
+                <option value="contains">Contains</option>
+                
+            </select>
+        </div>
+    </div>
+    <div class="col-xs-12 col-lg-3 xpl-0">
+        <div class="form-group mb-0">
+            <input type="text" class="form-control" id="name-search-patrn" placeholder="Search" name="patrn">
+        </div>
+    </div>
+    <div class="col-xs-12 col-lg-1 xpx-0">
+        <a id="name-search-button" class="btn btn-primary btn-block" href="#" role="button">Find</a>
+    </div>
+</div>
+</div>
+</div>
 
 </body>
 </html>
