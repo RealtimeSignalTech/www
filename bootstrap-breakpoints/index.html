@@ -34,8 +34,8 @@
 </div>
 
 <script type="text/javascript">
-function isBreakpoint(w){
-    return !$('.devdn-'+w).is(':visible');
+function isBrkp(w){
+    return !$('.devup-'+w).is(':visible');
 }
 
 function isDevice(w){
@@ -47,7 +47,6 @@ function isDevice(w){
     v += $('.devup-xl').is(':visible') ? '' : 'xl';
     return (w === v.substr(v.length - 2));
 }
-
 
 function initCheckDevice(){
     $('body').prepend($('<div>').addClass('device-width').html(
@@ -65,6 +64,12 @@ function checkDevice(){
     isDevice('md') ? $('.dbg-md').addClass('yes').removeClass('no') : $('.dbg-md').addClass('no').removeClass('yes');
     isDevice('lg') ? $('.dbg-lg').addClass('yes').removeClass('no') : $('.dbg-lg').addClass('no').removeClass('yes');
     isDevice('xl') ? $('.dbg-xl').addClass('yes').removeClass('no') : $('.dbg-xl').addClass('no').removeClass('yes');
+
+    isBrkp('xs') ? $('.dbg-xs').html('XS -brkp-yes') : $('.dbg-xs').html('XS -brkp--no')
+    isBrkp('sm') ? $('.dbg-sm').html('SM -brkp-yes') : $('.dbg-sm').html('SM -brkp--no')
+    isBrkp('md') ? $('.dbg-md').html('MD -brkp-yes') : $('.dbg-md').html('MD -brkp--no')
+    isBrkp('lg') ? $('.dbg-lg').html('LG -brkp-yes') : $('.dbg-lg').html('LG -brkp--no')
+    isBrkp('xl') ? $('.dbg-xl').html('XL -brkp-yes') : $('.dbg-xl').html('XL -brkp--no')
 }
 
 $(document).ready(function(){
