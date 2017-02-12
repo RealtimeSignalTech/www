@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/jquery-3.1.1.slim.min.js"></script>
+    <script src="/js/tether.min-140.js"></script>
+    <script src="/js/bootstrap.min-a6.js"></script>
+    <title>BS4A6: Flex</title>
+<style>
+.rb {border:1px solid red;}
+.gb {border:1px solid green;}
+.bb {border:1px solid blue;}
+</style>
+</head>
+<body>
+<!----module code starts---->
+
+<div class="rb mt-2 d-flex p-2">I'm a flexbox container!</div>
+<div class="bb mt-2 d-inline-flex p-2">I'm an inline flexbox container!</div>
+
+<div class="rb mt-2 d-md-flex p-2">I'm a MD flexbox container!</div>
+<div class="bb mt-2 d-md-inline-flex p-2">I'm MD inline flexbox container!</div>
+
+<div class="mt-2 d-flex flex-row">
+  <div class="bb border-right-0 p-2">Flex item 1</div>
+  <div class="bb border-right-0 p-2">Flex item 2</div>
+  <div class="bb border-right-1 p-2">Flex item 3</div>
+</div>
+<div class="mt-2 d-flex flex-row-reverse">
+  <div class="gb border-left-0 p-2">Flex item 1</div>
+  <div class="gb border-left-0 p-2">Flex item 2</div>
+  <div class="gb bordex-left-1 p-2">Flex item 3</div>
+</div>
+
+<div class="mt-2 d-flex flex-md-row justify-content-center">
+  <div class="bb border-right-0 p-2">MD Flex item 1</div>
+  <div class="bb border-right-0 p-2">MD Flex item 2</div>
+  <div class="bb border-right-1 p-2">MD Flex item 3</div>
+</div>
+<div class="mt-2 d-flex flex-md-row-reverse">
+  <div class="gb border-left-0 p-2">MD Flex item 1</div>
+  <div class="gb border-left-0 p-2">MD Flex item 2</div>
+  <div class="gb bordex-left-1 p-2">MD Flex item 3</div>
+</div>
+
+<div class="mt-2 d-flex justify-content-center justify-content-sm-around justify-content-md-between">
+  <div class="rb p-2">Flex item 1 times</div>
+  <div class="rb p-2">Flex item 2</div>
+  <div class="rb p-2">Flex item 3</div>
+</div>
+
+<div style="height:100px;" class="mt-2 gb d-flex flex-row align-items-center">
+  <div class="bb p-2 m-2 align-self-end">Flex item 1</div>
+  <div class="bb p-2 m-2 align-self-start">Flex item 2</div>
+  <div class="bb p-2 m-2">Flex item 3</div>
+</div>
+
+</body>
+</html>

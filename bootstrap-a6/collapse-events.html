@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/jquery-3.1.1.slim.min.js"></script>
+    <script src="/js/tether.min-140.js"></script>
+    <script src="/js/bootstrap.min-a6.js"></script>
+    <title>BS4A6: Flex</title>
+<style>
+.rb {border:1px solid red;}
+.gb {border:1px solid green;}
+.bb {border:1px solid blue;}
+
+/*10px gutter*/
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.gutter-10 > [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/*20px gutter*/
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.gutter-20 > [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!----module code starts---->
+
+
+<div class="card mt-1" id="heading-991">
+    <div class="card-header border-bottom-0 d-flex flex-row justify-content-between">
+        <span class="mb-0 col-8 pl-0">
+            <a data-toggle="collapse" aria-expanded="false" href="#collapse-991" aria-controls="collapse-991" class="collapsed">
+                Hit The Ground Running
+            </a>
+        </span>
+        <span>
+            4 videos
+        </span>
+        <span>
+            01:34:77
+        </span>
+    </div>
+    <div id="collapse-991" class="collapse" aria-expanded="false">
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex flex-row justify-content-between">
+            <span class="col-8">
+                Welcome to the R Programming Course!
+            </span>
+            <span>
+                Preview
+            </span>
+            <span>
+                00:12:88
+            </span>
+            </li>
+                <li class="list-group-item d-flex flex-row justify-content-between">
+            <span class="col-8">
+                Installing R and R Studio (MAC &amp; Windows)
+            </span>
+            <span>
+                Preview
+            </span>
+            <span>
+                00:12:88
+            </span>
+            </li>
+                <li class="list-group-item d-flex flex-row justify-content-between">
+            <span class="col-8">
+                Exercise - Get Excited!
+            </span>
+            <span>
+                Preview
+            </span>
+            <span>
+                00:12:88
+            </span>
+            </li>
+                <li class="list-group-item d-flex flex-row justify-content-between">
+            <span class="col-8">
+                BONUS: Using R in The Real World
+            </span>
+            <span>
+                Preview
+            </span>
+            <span>
+                00:12:88
+            </span>
+            </li>
+            </ul>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $('#collapse-991')
+    .on('show.bs.collapse', function(){ $(this).parent().children('div:first').removeClass('border-bottom-0'); })
+    .on('hidden.bs.collapse', function(){ $(this).parent().children('div:first').addClass('border-bottom-0'); })
+});
+</script>
+</div>
+</body>
+</html>
